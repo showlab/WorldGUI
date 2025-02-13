@@ -44,7 +44,7 @@ An overview of <b>GUI-Thinker</b>, includes five proposed components: Planner, P
 - [OOTB (Computer Use)](https://github.com/showlab/computer_use_ootb?tab=readme-ov-file): Computer Use OOTBStar is an out-of-the-box (OOTB) solution for Desktop GUI Agent, including API-based (Claude 3.5 Computer Use) and locally-running models (ShowUI, UI-TARS).
 
 - [ShowUI](https://github.com/showlab/ShowUI): Open-source, End-to-end, Lightweight, Vision-Language-Action model for GUI Agent & Computer Use.
-- [SWE-bench Multimodal] (https://www.swebench.com/multimodal.html)
+- [SWE-bench Multimodal](https://www.swebench.com/multimodal.html): SWE-bench Multimodal is a dataset for evaluating AI systems on visual software engineering tasks.
 
 ## 🎓 Citation
 
