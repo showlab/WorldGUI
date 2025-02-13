@@ -1,6 +1,7 @@
 <p align="center">
 
-  <h1 align="center">WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation</h1>
+  <!-- <h1 align="center">WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation</h1> -->
+  <img src="./assets/title.jpg">
   <p align="center">
     <a href="https://scholar.google.com/citations?user=QLSk-6IAAAAJ&hl=zh-CN"><strong>Henry Hengyuan Zhao</strong></a>
     ·
@@ -18,3 +19,44 @@
   </p>
 
 </p>
+
+<!-- ## Abstract -->
+
+
+
+## 📢 News
+* [13/02/2025] 🔥 We release the WorldGUI [paper](https://arxiv.org/pdf/2502.08047).
+
+## Benchmark Overview
+
+<p align="center"><img src="./assets/benchoverview.jpg" alt="benchmark"/></p>
+
+<b>WorldGUI</b>: An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment.
+
+## Agent Framework Overview
+
+<p align="center"><img src="./assets/agentoverview.jpg" alt="agent"/></p>
+
+An overview of <b>GUI-Thinker</b>, includes five proposed components: Planner, Planner-Critic, Step-Check, Actor, and Actor-Critic. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
+
+## 🙏 Acknowledgement
+
+- [OOTB (Computer Use)](): The codebase we built upon. 
+- [ShowUI](https://github.com/salesforce/LAVIS): We download some datasets from its scripts.
+- [SWE-bench Multimodal] (https://www.swebench.com/multimodal.html)
+
+## 🎓 Citation
+
+If you find WorldGUI useful, please cite using this BibTeX:
+
+```bibtex
+@misc{zhao2025worldguidynamictestingcomprehensive,
+      title={WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation}, 
+      author={Henry Hengyuan Zhao and Difei Gao and Mike Zheng Shou},
+      year={2025},
+      eprint={2502.08047},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2502.08047}, 
+}
+```
