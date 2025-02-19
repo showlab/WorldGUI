@@ -3,7 +3,7 @@
   <!-- <h1 align="center">WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation</h1> -->
   <img src="./assets/title.jpg">
   <p align="center">
-    <a href="https://scholar.google.com/citations?user=QLSk-6IAAAAJ&hl=zh-CN"><strong>Henry Hengyuan Zhao</strong></a>
+    <a href="https://zhaohengyuan1.github.io"><strong>Henry Hengyuan Zhao</strong></a>
     ·
     <a href="https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en"><strong>Difei Gao</strong></a>
     ·
@@ -25,7 +25,7 @@
 
 
 ## 📢 Update
-* [21/02/2025] We will release agent GUI-Thinker (Claude-3.5.-Sonnet) for easy use before 21 Feb.
+* [23/02/2025] We will release agent GUI-Thinker (Claude-3.5.-Sonnet) for easy use before 21 Feb.
 * [13/02/2025] We release the WorldGUI in [Arxiv](https://arxiv.org/pdf/2502.08047).
 
 
