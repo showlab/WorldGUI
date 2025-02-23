@@ -25,7 +25,7 @@
 
 
 ## 📢 Update
-* [23/02/2025] We will release agent GUI-Thinker (Claude-3.5.-Sonnet) for easy use before 21 Feb.
+* [23/02/2025] We will release agent GUI-Thinker (Claude-3.5.-Sonnet) soon.
 * [13/02/2025] We release the WorldGUI in [Arxiv](https://arxiv.org/pdf/2502.08047).
 
 
