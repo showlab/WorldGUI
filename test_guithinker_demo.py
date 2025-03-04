@@ -70,6 +70,7 @@ def main():
 
     autopc = AutoPC(user_id=software_name, project_id=projectID)
 
+    # Focus current software and get the initial screenshot
     focus_software(software_name)
     meta_data, screenshot_path = get_screenshot(software_name)
 
