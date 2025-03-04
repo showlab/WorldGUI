@@ -9,8 +9,8 @@
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
 ## 📢 Update (Stay tuned)
-* [05/03/2025] Our GUI-Thinker now supports both instructional video and non-video inputs. Enjoy!
-* [05/03/2025] 😊 We release the code of agent GUI-Thinker. Now, we support running our agent on your Windows computer locally.
+* [05/03/2025] Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
+* [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker).
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
 ## What is the WorldGUI?
