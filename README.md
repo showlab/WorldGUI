@@ -139,4 +139,3 @@ If you find WorldGUI useful, please cite using this BibTeX:
       url={https://arxiv.org/abs/2502.08047}, 
 }
 ```
-If you like our project, please give us a star ⭐ on GitHub for the latest update.
