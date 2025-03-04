@@ -3,6 +3,8 @@
   <img src="./assets/title.jpg">
   <p align="center" style="margin-top: 10px">
     <!-- <br> -->
+    [arXiv](https://img.shields.io/badge/Arxiv-2411.10323-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.10323)
+
         <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-WorldGUI-red' alt='Paper PDF'></a>
         <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
     </br>
@@ -11,6 +13,7 @@
 
 </p>
 
+<h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
 ## 📢 Update
 * [05/03/2025] 😊 We release the code of agent GUI-Thinker. Now, we support running our agent on your Windows computer locally.
@@ -37,15 +40,21 @@ Additionally, we develop a new agent framework, **GUI-Thinker**, leveraging a cr
 
 An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
 
-## Computer Use Agent (GUI-Thinker)
+## 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
+
+### 1. 📂 Clone the Repository 
+Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
+Run the following command on **Conda Terminal**.
+```bash
+git clone https://github.com/showlab/WorldGUI.git
+cd WorldGUI
+```
 
 ### 1. 🔨 Env setup
 
 To create a Conda virtual environment and activate it, follow these steps:
 
-1. Open your terminal (or Anaconda Prompt if you are on Windows).
-
-2. Create a new Conda environment named `guithinker` with Python 3.11 installed:
+Create a new Conda environment named `guithinker` with Python 3.11 installed:
 
 ```bash
 conda create -n guithinker python=3.11
@@ -53,7 +62,7 @@ conda activate guithinker
 pip install -r requirements.txt
 ```
 
-3. Install the dependencies:
+Install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
@@ -62,11 +71,11 @@ Moreover, you can refer to the files under folder `.log` to manually install the
 ### 2. 🔧 Set API Key
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
-```bash
-$env:ANTHROPIC_API_KEY="sk-xxxxx" (Replace with your own key)
-$env:GEMINI_API_KEY="sk-xxxxx"
-$env:OPENAI_API_KEY="sk-xxxxx"
-```
+>```bash
+>$env:ANTHROPIC_API_KEY="sk-xxxxx" (Replace with your own key)
+>$env:GEMINI_API_KEY="sk-xxxxx"
+>$env:OPENAI_API_KEY="sk-xxxxx"
+>```
 
 ### 3. 🔧 Set Google Clound Vision API
 We implement our GUI parser with the help of [google clound vision service](https://cloud.google.com/vision?hl=zh_cn). We recommend you following this [guidance](https://cloud.google.com/vision/product-search/docs/auth?hl=zh-cn) to save a local file for the identity verification.
