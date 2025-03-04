@@ -114,7 +114,7 @@ Initial Screenshot:
 Intermediate Screenshot:
 <p align="center"><img src="./assets/306_inter.png" alt="" style="width: 80%"/></p>
 
-Invoke Region Search in Step-Check Module and the resulted image:
+Invoke the Region Search in the Step-Check Module, which yields the following image:
 <p align="center"><img src="./assets/region_locate.png" alt="" style="width: 80%"/></p>
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
