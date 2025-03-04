@@ -28,11 +28,11 @@
 
 ## What is the GUI-Thinker?
 
-**GUI-Thinker** is a new GUI agent framework with three vital critical modules: Planner-Critic, Step-Check and Actor-Critic. We argue that the design of GUI-Thinker is basic and crucial for GUI automation by our entensive pilot study.
+**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to enhance task success rates.
 
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
-An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
+<!-- An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed. -->
 
 ## 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
 
