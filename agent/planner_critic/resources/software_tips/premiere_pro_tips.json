@@ -1,0 +1,10 @@
+{
+    "premiere_pro": [
+        "Don't move the playhead unless the task asks for it.",
+        "Press ctrl-A to select the parameter before changing it.",
+        "To change a setting, click on its value, not the name. For example, click \"1000\" instead of \"Position\" in \"Position 1000.\"",
+        "Use the Tab key instead of pressing Enter after entering parameters.",
+        "For create new things, right-click on some panel, MUST right click on the empty space of it, better to be bottom of the panel. ",
+        "                          "
+    ]
+}

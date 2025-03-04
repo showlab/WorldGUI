@@ -1,0 +1,9 @@
+{
+    "settings": [
+        "Dropdown menus are enclosed in a box, with the text above them serving as a label, not the menu's options.",
+        "The left column serves as a navigation bar, while the right column displays detailed content for each section.",
+        "If you can't find the desired content, please scroll the screen",
+        "To scroll the content on the right, move the mouse to the blank area or an item on the right side without clicking, then scroll.",
+        "Use the moveTo() action to position the mouse before clicking through click()."
+    ]
+}

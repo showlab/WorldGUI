@@ -1,0 +1,9 @@
+{
+    "word": [
+        "When selecting text, click one the horizontal and vertical middle area of the text and then use ctrl-A to select all the text.",
+        "When typing font size: must press ctrl-A before typing.",
+        "When click dropdown of some button, must click the dropdown on the right side of the button.",
+        "Do not use hotkey 'Alt + A' to replace the operation 'click on the button Replace All'",
+        "Do add moveTo({x}, {y}, duration=1) before each click({x}, {y})."
+    ]
+}

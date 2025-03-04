@@ -1,0 +1,12 @@
+{
+    "powerpoint": [
+        "When typing font size: must press ctrl-A before typing.",
+        "When selecting text, do not choose the text in the left thumbnails.",
+        "When selecting text, click one the horizontal and vertical middle area of the text and then use ctrl-A to select all the text. Do not use shift and redundant click.",
+        "When selecting the text, there may be two candidates: one from the left thumbnail and one from the main pane. Please ignore the text in the left thumbnail.",
+        "When use drag operation, please use moveTo({start_x}, {start_y})\nmouseDown()\nmoveTo({end_x}, {end_y}, duration={duration})\nmouseUp()",
+        "A vertical distance of approximately 250 pixels between slides.",
+        "The input box id under the 'Replace with', you need to add 50 pixels vertically to click it.",
+        "Randomly click the main pane of slide when there is no elements in the main slide pane."
+    ]
+}

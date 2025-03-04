@@ -1,0 +1,6 @@
+{
+    "vscode": [
+        "Do add moveTo({x}, {y}, duration=1) before each click({x}, {y}).",
+        "After completing the 'Save As' process, a dialog window will appear, indicating the operation is finished. No further action is required."
+    ]
+}

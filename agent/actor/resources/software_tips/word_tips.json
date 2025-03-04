@@ -1,0 +1,11 @@
+{
+    "word": [
+        "When selecting text, click one the horizontal and vertical middle area of the text and then use ctrl-A to select all the text.",
+        "When typing font size: must press ctrl-A before typing.",
+        "When click dropdown of some button, must click the dropdown on the right side of the button.",
+        "Do not use hotkey 'Alt + A' to replace the operation 'click on the button Replace All'",
+        "Assuming slecting each option which is directly belowed the 'Columns' dropdown menu, the vertical position should add 50 gradually. For example, you want select 'Two', the position should add 100. You should use moveTo({x}, {y}, duration=1) before click({x}, {y}).",
+        "Do add moveTo({x}, {y}, duration=1) before each click({x}, {y}).",
+        "The menuitem 'Insert Table...' is different 'Insert Table'."
+    ]
+}

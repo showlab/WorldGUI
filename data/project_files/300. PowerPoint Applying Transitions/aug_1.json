@@ -1,0 +1,1 @@
+"from pyautogui import moveTo, mouseDown, mouseUp, click\nmoveTo(150, 422)\nclick(150, 422)"

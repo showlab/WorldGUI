@@ -1,0 +1,11 @@
+{
+    "word": [
+        "When selecting text, click one the horizontal and vertical middle area of the text and then use ctrl-A to select all the text.",
+        "When typing font size: must press ctrl-A before typing.",
+        "When click dropdown of some button, must click the dropdown on the right side of the button.",
+        "Do not use hotkey 'Alt + A' to replace the operation 'click on the button Replace All'",
+        "When change the line space of the text, please do not open Line Spacing Options. Do directly select the line space in the dropdown menu.",
+        "When inserting table, do not use mouse hover, click on 'Insert Table...' MenuItem, then input the 'Number of columns' and 'Number of rows' values. Click 'OK' to finish the task of instering table.",
+        "When selecting entir table, please just click the content of table."
+    ]
+}

@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WorldGUI</title>
+    <meta
+      name="description"
+      content="WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- <meta property="og:image" content="./logo.png" /> -->
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="shortcut icon" href="favicon_mm.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon_mm.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H9XFCMDPNS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-H9XFCMDPNS");
+    </script>
+  </head>
+  <body>
+    <div style="padding-bottom: 50px">
+        <section style="
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            background-blend-mode: screen;
+        ">
+        <div
+          class="content-wrapper title-wrapper"
+          style="flex-direction: column;"
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding-bottom: 15px;
+            "
+          >
+            <h1 style="font-size: 60px; padding-top: 0.4em; color: #2F4F4F;">WorldGUI Benchmark</h1>
+            <img
+              src="assets/logo.png"
+              style="height: 80px; padding-top: 0em; padding-left: 1em"
+            />
+          </div>
+          <h2 style="color: #2F4F4F;">Dynamic Testing for Comprehensive Desktop GUI Automation</h2>
+          <!-- <h3 style="font-size: 20px; padding-top: 1.2em">ICLR 2025</h3> -->
+          <p style="text-align: center;margin-top:1em; color: #2F4F4F; font-size: 20px;">
+            Henry Hengyuan Zhao, Difei Gao, Mike Zheng Shou
+          </p>
+          <p style="text-align: center;margin-top:1em; color: #2F4F4F; font-size: 20px;">
+            National University of Singapore
+          </p>
+          <div class="content-wrapper" style="margin-top: 2em;">
+            <!-- <a href="index.html">
+              <button
+                class="outline multimodal"
+                style="flex-direction: row; display: flex; justify-content: center; align-items: center;">
+                <img
+                  src="img/swellama.png"
+                  style="height: 1.3em; margin-right: 0.4em; margin-bottom: 0.3em;" />
+                  Home&nbsp;
+              </button>
+            </a> -->
+            <a href="https://arxiv.org/abs/2502.08047">
+              <button class="outline multimodal">
+                <i class="fa fa-paperclip"></i> Paper&nbsp;
+              </button>
+            </a>
+            <a href="https://github.com/showlab/WorldGUI">
+              <button class="outline multimodal">
+                <i class="fa-brands fa-github"></i> Code&nbsp;
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="main-container">
+        <div class="content-wrapper">
+          <div class="content-box">
+            <h2 class="text-title" style="margin-bottom:0.5em">About</h2>
+            <img src="assets/teaser.jpg" style="width:40%;margin:auto;display:block;"/>
+            <p class="text-content">WorldGUI is an early work to stimulate <i>dynamism</i> in the real user-computer scenarios.
+              As illustrated in above figure, most GUI benchmarks focus on initial and final states, measuring success rates but overlooking the changing initial conditions present in real GUI scenarios. 
+              These benchmarks often <b>ignore</b> situations where: <br>(1) The software interface is not in its default state. <br> (2) The agent might get user queries at any time. <br>(3) Differences in agent robustness, where agents with the same low success rate (e.g. 2%) may vary 
+              in their ability to self-verify or self-correct, but these abilities are not measured in a <i>static</i> setting.</p>
+            <!-- <p class="text-content">
+              Current Graphical User Interface (GUI) agents have achieved outstanding performance in GUI element grounding. However, planning remains highly challenging, especially due to sensitivity to the initial state of the environment. 
+              <span style="color:blueviolet">Specifically, slight differences in the initial state—such as the target software not being open or the interface not being in its default state—often lead to planning errors.</span> This issue is widespread in real application scenarios, 
+              but existing benchmarks fail to evaluate it. In this paper, we present WorldGUI, a novel GUI benchmark that designs GUI tasks with various initial states to simulate real computer-user interactions. The benchmark spans a wide range of 
+              tasks across 10 popular software applications, including PowerPoint, VSCode, and Adobe Acrobat. In addition, to address the challenges of dynamic GUI automation tasks, we propose GUI-Thinker, a holistic framework, leveraging a critique mechanism, 
+              that effectively manages the unpredictability and complexity of GUI interactions. Experimental results demonstrate that GUI-Thinker significantly outperforms top-performing model Claude-3.5 (Computer Use) by 14.9% in success rate on WorldGUI tasks. This improvement 
+              underscores the effectiveness of our critical-thinking–based framework in enhancing GUI automation.
+            </p> -->
+            <h2 class="text-title" style="margin-bottom:0.5em">Benchmark Overview</h2>
+            <img src="assets/benchoverview.jpg" style="width:80%;margin:auto;display:block;"/>
+            <p class="text-content">
+                <b>WorldGUI</b>: The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment.
+            </p class="text-content">
+            <h2 class="text-title" style="margin-bottom:0.5em">Agent Overview</h2>
+            <img src="assets/agentoverview.jpg" style="width:80%;margin:auto;display:block;"/>
+            <p class="text-content">
+                <b>GUI-Thinker</b> includes five proposed components: Planner, Planner-Critic, Step-Check, Actor, and Actor-Critic. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
+            </p class="text-content">
+            <h2 class="text-title">Benchmark Comparison</h2>
+            <img src="assets/datasetcompare.jpg" style="width:80%;margin:auto;display:block;"/>
+            <p class="text-content" style="text-align: center;">
+              Table 1: WorldGUI is a unique benchmark that has the various states for each task to stimulate the real-world agent-computer interactions.
+            </p>
+
+            <h2 class="text-title">Data Statistic</h2>
+            <img src="assets/taskstattable.jpg" style="width:80%;margin:auto;display:block;">
+            <p class="text-content" style="text-align: center;">Table 2: This table shows all tasks, task activities, and project file of the desktop applications used in WorldGUI.</p>
+      
+            <img src="assets/datastatic2.jpg" style="width:80%;margin:auto;display:block;">
+            <p class="text-content" style="text-align: center;">Figure 1: Distribution of collect tasks, selected queries, and task amount of WorldGUI. We have gathered tasks across 10 desktop applications, focusing on the use of productivity software as well as fundamental computer operations and settings.</p>
+
+            <h2 class="text-title">An Successful Execution Example</h2>
+            <img src="assets/sucessexample.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">An Example of Augmented Data Construction</h2>
+            <img src="assets/augexample.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">Visualization of Parser Results</h2>
+            <img src="assets/parservis.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">An Example of Planner-Ciritc</h2>
+            <img src="assets/plannercritic.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">An Example of Step-Check</h2>
+            <img src="assets/stepcheck.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">An Example of Actor-Ciritc</h2>
+            <img src="assets/actorcritic.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">An Example of Planner-Ciritc</h2>
+            <img src="assets/plannercritic.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">Erorr Cases Visualization</h2>
+            <img src="assets/error1.jpg" style="width:80%;margin:auto;display:block;">
+            <img src="assets/error2.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title">Algorithm: GUI-Thinker Reasoning Loop</h2>
+            <img src="assets/algorithm.jpg" style="width:80%;margin:auto;display:block;">
+
+            <h2 class="text-title" style="margin-bottom:0.5em">Citation</h2>
+            <pre id="citation" style="border-color: #2F4F4F;"><code>@misc{zhao2025worldguidynamictestingcomprehensive,
+      title={WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation}, 
+      author={Henry Hengyuan Zhao and Difei Gao and Mike Zheng Shou},
+      year={2025},
+      eprint={2502.08047},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2502.08047}, 
+}</code></pre>
+            <p class="text-content" style="margin-bottom: 0;">
+            <p style="line-height: 1.6667em;">
+              <b>Acknowledge:</b> Thanks to Carlos & John for this webpage template.
+              Also thanks to the SWE-bench team and their benchmark <a href="https://www.swebench.com/multimodal.html">https://www.swebench.com/multimodal.html</a>.
+            </p>
+            <p><b>Template Usage:</b> If you would like to use this website template for your own leaderboard, please <span style="color:brown">send Carlos & John an email requesting permission.</span> If granted, please make sure to acknowledge the SWE-bench team and link to this leaderboard on the home page of the website.
+
+            </p>
+            </p>
+            <!-- <p class="text-content">
+              Correspondence to: <a href="hen">carlosej@princeton.edu</a>,
+            </p> -->
+            <div class="content-wrapper" style="display: flex; flex-direction: row; margin-top: 0.5em;">
+              <a href="https://sites.google.com/view/showlab" style="display: flex; flex-direction: row;">
+                <img src="./assets/showlab_logo.png" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
+              </a>
+              <a href="https://www.nus.edu.sg/">
+                <img src="https://www.nus.edu.sg/images/default-source/base/logo.png" style="height: 3em;padding-top:0.5em;padding-right: 1em" />
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

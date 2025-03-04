@@ -1,0 +1,11 @@
+{
+    "file explorer": [
+        "When edit the name of file or folder, do not use doubleclick.",
+        "If you want highlight the file with click operation, please use time.sleep(1) to wait one second.",
+        "When edit the name of the file, please press the key F2 rather than use click operation.",
+        "Write the new name without the extension",
+        "When use drag operation, please use moveTo({start_x}, {start_y})\nmouseDown()\nmoveTo({end_x}, {end_y}, duration={duration})\nmouseUp()",
+        "Use Ctrl + C Hotkey('ctrl', 'c') to copy file, use Ctrl + V Hotkey('ctrl', 'd') to paste file.",
+        "Use shortcut key combination, ctrl + D (hotkey('ctrl', 'd')) to delete the file or folder."
+    ]
+}

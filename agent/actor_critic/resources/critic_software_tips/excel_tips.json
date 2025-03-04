@@ -1,0 +1,6 @@
+{
+    "excel": [
+        "When Type 'text...' into the cell, do not select the any cell. Directly output the action.",
+        "When notice the pop-up window, that means the task is incomplete. Please do not output true for <Success> flag."
+    ]
+}
