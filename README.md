@@ -23,8 +23,6 @@
 
 **WorldGUI** is a novel GUI benchmark that sets itself apart from earlier benchmarks like OSWorld, AssistGUI, and WindowsAgentArena. While those benchmarks primarily focus on static testing as shown in the left of the figure, WorldGUI designs each GUI task with various initial states to better reflect the complex and dynamic nature of real-world computer usage as shown in the right of the figure.
 
-Additionally, we develop a new agent framework, **GUI-Thinker**, leveraging a critique mechanism, that effectively manages the unpredictability and complexity of GUI interactions.
-
 
 <!-- ### Benchmark Overview -->
 <!-- 
@@ -32,7 +30,9 @@ Additionally, we develop a new agent framework, **GUI-Thinker**, leveraging a cr
 
 <b>WorldGUI</b>: An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment. -->
 
-### Agent Framework Overview
+## What is the GUI-Thinker?
+
+**GUI-Thinker** is a new GUI agent framework with three vital critical modules: Planner-Critic, Step-Check and Actor-Critic. We argue that the design of GUI-Thinker is basic and crucial for GUI automation by our entensive pilot study.
 
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
