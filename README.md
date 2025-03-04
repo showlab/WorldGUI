@@ -3,9 +3,7 @@
   <img src="./assets/title.jpg">
   <p align="center" style="margin-top: 10px">
     <!-- <br> -->
-    [arXiv](https://img.shields.io/badge/Arxiv-2411.10323-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.10323)
-
-        <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-WorldGUI-red' alt='Paper PDF'></a>
+        <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
         <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
     </br>
     </br>
