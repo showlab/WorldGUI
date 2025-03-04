@@ -109,10 +109,10 @@ python test_guithinker_demo.py
 User Query: Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.
 
 Initial Screenshot:
-<p align="center"><img src="./assets/306_start.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 80%"/></p>
 
 Intermediate Screenshot:
-<p align="center"><img src="./assets/306_inter.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 80%"/></p>
 
 Invoke the Region Search in the Step-Check Module, which yields the following image:
 <p align="center"><img src="./assets/region_locate.png" alt="" style="width: 80%"/></p>
@@ -120,7 +120,7 @@ Invoke the Region Search in the Step-Check Module, which yields the following im
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
 Final Screnshot:
-<p align="center"><img src="./assets/306_end.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 80%"/></p>
 
 ### 🎈 Test with your own user query
 
