@@ -28,7 +28,7 @@
 
 ## What is the GUI-Thinker?
 
-**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to enhance task success rates.
+**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to enhance task success rates. It dynamically adjusts its action commands when encountering unanticipated states(e.g., user settings are impossible known in advance)
 
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
