@@ -119,7 +119,7 @@ Invoke the Region Search in the Step-Check Module, which yields the following im
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
-Final Screnshot:
+Final Screenshot:
 <p align="center"><img src="./assets/demo_end.png" alt="" style="width: 80%"/></p>
 
 ### 🎈 Test with your own user query
