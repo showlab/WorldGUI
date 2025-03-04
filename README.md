@@ -1,14 +1,9 @@
-<p align="center">
-
+<p align="center" style="margin:0">
   <img src="./assets/title.jpg">
   <p align="center" style="margin-top: 10px">
-    <!-- <br> -->
         <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
         <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
-    </br>
-    </br>
   </p>
-
 </p>
 
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
