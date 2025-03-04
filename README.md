@@ -129,7 +129,7 @@ python test_guithinker_custom.py --userquery "Set the transitions of the second 
 ``` 
 
 
-# ❤ Acknowledgement
+## ❤ Acknowledgement
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
