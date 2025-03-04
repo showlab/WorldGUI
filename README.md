@@ -9,6 +9,7 @@
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
 ## 📢 Update
+* [05/03/2025] Our GUI-Thinker now supports both instructional video and non-video inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of agent GUI-Thinker. Now, we support running our agent on your Windows computer locally.
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
@@ -98,9 +99,15 @@ For windows:
 .\shells\start_server.bat
 ```
 
-Fast evaluation with following command with a prepared demo case under the folder `data`:
+#### Test with a prepared demo case under the folder `data`:
 ```bash
-python test_guithinker_single.py
+python test_guithinker_demo.py
+``` 
+
+#### Test with your own user query
+
+```bash
+python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" --projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
 ``` 
 
 

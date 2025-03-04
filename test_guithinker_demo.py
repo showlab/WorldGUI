@@ -18,6 +18,8 @@ from agent.config import basic_config
 
 def main():
     parser = argparse.ArgumentParser(description="GUI-Thinker Locally Running")
+    parser.add_argument("--software_name", type=str, default="PowerPoint")
+    parser.add_argument("aug_id", type=int, default=0, help="index of augmentations. 0 represent no augmentation.")
     parser.add_argument("--data_path", type=str, default="./data/demo.json")
     parser.add_argument("--maximum_step", type=int, default=20, help="total steps")
     parser.add_argument("--max_critic_trials", type=int, default=3, help="set the maiximum trials of critic times")
@@ -25,14 +27,13 @@ def main():
 
     saved_folder = 'test_results/%s'%(basic_config['planner_critic']['lmm'])
 
-    software_name = "PowerPoint"
-    aug_id = 0 # no augmentation
-
+    software_name = args.software_name
+    aug_id = args.aug_id
 
     datafile = json.load(open(args.data_path,'r'))[0]
 
     video_path = datafile["video_path"]
-    ProjectID = datafile['project_id']
+    projectID = datafile['project_id']
     query = datafile['user_query']
 
     if software_name == "PowerPoint":
@@ -66,24 +67,24 @@ def main():
     last_screenshot_path = ""
     critic_count = 0
 
-    autopc = AutoPC(user_id=software_name, project_id=ProjectID)
+    autopc = AutoPC(user_id=software_name, project_id=projectID)
 
     focus_software(software_name)
     meta_data, screenshot_path = get_screenshot(software_name)
 
     if augfile:
         aug_name = os.path.basename(augfile).split('.')[0]
-        new_screenpath = os.path.join("../%s"%(saved_folder), software_name, "%s_%s_start.png"%(ProjectID, aug_name))
+        new_screenpath = os.path.join("%s"%(saved_folder), software_name, "%s_%s_start.png"%(projectID, aug_name))
     else:
         aug_name = "meta"
-        new_screenpath = os.path.join("../%s"%(saved_folder), software_name, "%s_start.png"%(ProjectID))
+        new_screenpath = os.path.join("%s"%(saved_folder), software_name, "%s_start.png"%(projectID))
 
     print('Save result in', new_screenpath)
     os.makedirs(os.path.dirname(new_screenpath), exist_ok=True)
     shutil.copy(screenshot_path, new_screenpath)
 
 
-    gui_results = send_gui_parser_request(basic_config['gui_parser']['url'], software_name, screenshot_path, meta_data, task_id=ProjectID, step_id="1")
+    gui_results = send_gui_parser_request(basic_config['gui_parser']['url'], software_name, screenshot_path, meta_data, task_id=projectID, step_id="1")
     gui_info = compress_gui(copy.deepcopy(gui_results))
     gui_info = "\n".join(format_gui(gui_info))
 
@@ -148,9 +149,9 @@ def main():
 
     if augfile:
         aug_name = os.path.basename(augfile).split('.')[0]
-        new_screenpath = os.path.join("../%s"%(saved_folder), software_name, "%s_%s_end.png"%(ProjectID, aug_name))
+        new_screenpath = os.path.join("%s"%(saved_folder), software_name, "%s_%s_end.png"%(projectID, aug_name))
     else:
-        new_screenpath = os.path.join("../%s"%(saved_folder), software_name, "%s_end.png"%(ProjectID))
+        new_screenpath = os.path.join("%s"%(saved_folder), software_name, "%s_end.png"%(projectID))
     print('Save result in', new_screenpath)
     os.makedirs(os.path.dirname(new_screenpath), exist_ok=True)
     shutil.copy(screenshot_path, new_screenpath)
