@@ -8,7 +8,7 @@
 
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
-# 📢 Update (Stay tuned)
+## 📢 Update (Stay tuned)
 * [05/03/2025] Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker).
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
@@ -34,7 +34,7 @@
 
 <!-- An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed. -->
 
-# 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
+## 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
 
 ## 1. 📂 Clone the Repository 
 Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
