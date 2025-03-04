@@ -98,7 +98,7 @@ For windows:
 .\shells\start_server.bat
 ```
 
-Fast evaluation with following command:
+Fast evaluation with following command with a prepared demo case under the folder `data`:
 ```bash
 python test_guithinker_single.py
 ``` 
