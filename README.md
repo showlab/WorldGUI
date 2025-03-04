@@ -86,9 +86,8 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 
 ### 4. ⭐ Quick Start
-The BasicGUI uses GPT-4 or Gemini, first set OPENAI_API_KEY and GEMINI_API_KEY in your environment.
-In BasicGUI, each module has been separated into its own service. Use the following command to start replication, after which you will be able to access each module via API:
 
+Start the server
 For windows:
 ```bash
 .\shells\start_server.bat
@@ -96,14 +95,14 @@ For windows:
 
 Every time you change the files under the folder **`agent`**, you need to restart the server.
 
+Restart the server
 For windows:
 ```bash
 .\shells\end_server.bat
 .\shells\start_server.bat
 ```
 
-
-### 5. Fast evaluation
+Fast evaluation with following command:
 ```bash
 python test_guithinker_single.py
 ``` 
