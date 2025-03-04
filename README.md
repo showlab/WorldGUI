@@ -48,7 +48,7 @@ git clone https://github.com/showlab/WorldGUI.git
 cd WorldGUI
 ```
 
-### 1. 🔨 Env setup
+### 2. 🔨 Env setup
 
 To create a Conda virtual environment and activate it, follow these steps:
 
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```
 Moreover, you can refer to the files under folder `.log` to manually install the corresponding modules.
 
-### 2. 🔧 Set API Key
+### 3. 🔧 Set API Key
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
 >```bash
@@ -75,7 +75,7 @@ We recommend running one or more of the following command to set API keys to the
 >$env:OPENAI_API_KEY="sk-xxxxx"
 >```
 
-### 3. 🔧 Set Google Clound Vision API
+### 4. 🔧 Set Google Clound Vision API
 We implement our GUI parser with the help of [google clound vision service](https://cloud.google.com/vision?hl=zh_cn). We recommend you following this [guidance](https://cloud.google.com/vision/product-search/docs/auth?hl=zh-cn) to save a local file for the identity verification.
 
 ```bash
@@ -84,8 +84,7 @@ gcloud auth activate-service-account --key-file KEY_FILE
 $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 ```
 
-
-### 4. ⭐ Quick Start
+### 5. ⭐ Quick Start
 
 #### Start the server
 
