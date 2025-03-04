@@ -25,11 +25,11 @@
 Additionally, we develop a new agent framework, **GUI-Thinker**, leveraging a critique mechanism, that effectively manages the unpredictability and complexity of GUI interactions.
 
 
-### Benchmark Overview
-
+<!-- ### Benchmark Overview -->
+<!-- 
 <p align="center"><img src="./assets/benchoverview.jpg" alt="benchmark" style="width: 80%"/></p>
 
-<b>WorldGUI</b>: An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment.
+<b>WorldGUI</b>: An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment. -->
 
 ### Agent Framework Overview
 
@@ -78,7 +78,7 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 ```
 
 
-### 3. Quick Start
+### 4. Quick Start
 The BasicGUI uses GPT-4 or Gemini, first set OPENAI_API_KEY and GEMINI_API_KEY in your environment.
 In BasicGUI, each module has been separated into its own service. Use the following command to start replication, after which you will be able to access each module via API:
 
@@ -96,9 +96,9 @@ For windows:
 ```
 
 
-### 3. Fast evaluation
+### 5. Fast evaluation
 ```bash
-python test_examples\test_autopc_henry.py
+python test_guithinker_single.py
 ``` 
 
 
