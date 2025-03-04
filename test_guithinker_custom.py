@@ -29,8 +29,6 @@ def main():
     saved_folder = 'test_results/%s'%(basic_config['planner_critic']['lmm'])
     software_name = args.software_name
 
-
-
     video_path = "" # leave it blank
     projectID = args.projectID
     query = args.userquery
