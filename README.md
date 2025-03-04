@@ -8,7 +8,7 @@
 
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
-## 📢 Update
+## 📢 Update (Stay tuned)
 * [05/03/2025] Our GUI-Thinker now supports both instructional video and non-video inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of agent GUI-Thinker. Now, we support running our agent on your Windows computer locally.
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
