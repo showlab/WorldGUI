@@ -6,7 +6,7 @@ from agent.utils.lmm.lmm_utils import is_image_path, encode_image
 from openai import OpenAI
 
 
-def run_gpt4o_interleaved(prompt, llm, max_tokens=1024, temperature=0, stop=None):
+def run_gpt4o_interleaved(prompt, llm, max_tokens=1000, temperature=0, stop=None):
 
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 

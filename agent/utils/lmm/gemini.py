@@ -3,7 +3,7 @@ from agent.utils.lmm.lmm_utils import encode_image, is_image_path
 
 import google.generativeai as genai
 
-def run_gemini_interleaved(prompt, llm, max_tokens=256, temperature=0, stop=None):
+def run_gemini_interleaved(prompt, llm, max_tokens=1000, temperature=0, stop=None):
 
     genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
