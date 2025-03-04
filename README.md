@@ -87,7 +87,8 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 ### 4. ⭐ Quick Start
 
-Start the server
+#### Start the server
+
 For windows:
 ```bash
 .\shells\start_server.bat
@@ -95,7 +96,8 @@ For windows:
 
 Every time you change the files under the folder **`agent`**, you need to restart the server.
 
-Restart the server
+#### Restart the server
+
 For windows:
 ```bash
 .\shells\end_server.bat
