@@ -99,12 +99,12 @@ For windows:
 .\shells\start_server.bat
 ```
 
-#### Test with a prepared demo case under the folder `data`:
+#### 💻 Test with a prepared demo case under the folder `data`:
 ```bash
 python test_guithinker_demo.py
 ``` 
 
-#### Test with your own user query
+#### 🎈 Test with your own user query
 
 ```bash
 python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" --projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
