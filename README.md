@@ -13,7 +13,7 @@
 
 
 ## 📢 Update
-* [04/03/2025] We release the code of agent GUI-Thinker. Now, we support running our agent on your Windows computer locally.
+* [05/03/2025] 😊 We release the code of agent GUI-Thinker. Now, we support running our agent on your Windows computer locally.
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
 ## What is the WorldGUI?
@@ -39,7 +39,7 @@ An overview of <b>GUI-Thinker</b>. The Planner module receives the user query an
 
 ## Computer Use Agent (GUI-Thinker)
 
-### 1. Env setup
+### 1. 🔨 Env setup
 
 To create a Conda virtual environment and activate it, follow these steps:
 
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ```
 Moreover, you can refer to the files under folder `.log` to manually install the corresponding modules.
 
-### 2. Set API Key
+### 2. 🔧 Set API Key
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
 ```bash
@@ -68,7 +68,7 @@ $env:GEMINI_API_KEY="sk-xxxxx"
 $env:OPENAI_API_KEY="sk-xxxxx"
 ```
 
-### 3. Set Google Clound Vision API
+### 3. 🔧 Set Google Clound Vision API
 We implement our GUI parser with the help of [google clound vision service](https://cloud.google.com/vision?hl=zh_cn). We recommend you following this [guidance](https://cloud.google.com/vision/product-search/docs/auth?hl=zh-cn) to save a local file for the identity verification.
 
 ```bash
@@ -78,7 +78,7 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 ```
 
 
-### 4. Quick Start
+### 4. ⭐ Quick Start
 The BasicGUI uses GPT-4 or Gemini, first set OPENAI_API_KEY and GEMINI_API_KEY in your environment.
 In BasicGUI, each module has been separated into its own service. Use the following command to start replication, after which you will be able to access each module via API:
 
