@@ -19,7 +19,8 @@ from agent.config import basic_config
 def main():
     parser = argparse.ArgumentParser(description="GUI-Thinker Locally Running")
     parser.add_argument("--software_name", type=str, default="PowerPoint")
-    parser.add_argument("aug_id", type=int, default=0, help="index of augmentations. 0 represent no augmentation.")
+    parser.add_argument("--taskID", type=int, default=1, help="index of tasks in the data json file.")
+    parser.add_argument("--aug_id", type=int, default=0, help="index of augmentations. 0 represent no augmentation.")
     parser.add_argument("--data_path", type=str, default="./data/demo.json")
     parser.add_argument("--maximum_step", type=int, default=20, help="total steps")
     parser.add_argument("--max_critic_trials", type=int, default=3, help="set the maiximum trials of critic times")
@@ -30,7 +31,7 @@ def main():
     software_name = args.software_name
     aug_id = args.aug_id
 
-    datafile = json.load(open(args.data_path,'r'))[0]
+    datafile = json.load(open(args.data_path,'r'))[args.taskID]
 
     video_path = datafile["video_path"]
     projectID = datafile['project_id']

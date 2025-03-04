@@ -15,7 +15,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.abspath(os.path.join(os.path.dirname(__file__), '../config', 'googleocr-config.json'))
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.abspath(os.path.join(os.path.dirname(__file__), '../config', 'googleocr-config.json'))
 openai.api_key = os.getenv('OPENAI_KEY')
 
 

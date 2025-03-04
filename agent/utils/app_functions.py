@@ -117,10 +117,7 @@ Note:
 
     croped_image = imagecentercrop(img_screen, [x, y], W, H)
 
-    savedir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'tmp_screenshot/tmp.png'))
-    imgname = os.path.basename(screenshot_path)
-
-    crop_screenshot_path = os.path.join(savedir, imgname.replace('.png', '_cropped.png'))
+    crop_screenshot_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', 'tmp_screenshot/tmp.png'))
     croped_image.save(crop_screenshot_path, quality=95)
     
     return crop_screenshot_path

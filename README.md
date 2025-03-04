@@ -80,6 +80,8 @@ gcloud auth activate-service-account --key-file KEY_FILE
 $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 ```
 
+(Optional) Set the path of `KEY_FILE` in the path [agent/gui_parser/server.py#L18](https://github.com/showlab/WorldGUI/blob/main/agent/gui_parser/server.py#L18)
+
 ### 5. ⭐ Quick Start
 
 #### Start the server
@@ -103,6 +105,22 @@ For windows:
 ```bash
 python test_guithinker_demo.py
 ``` 
+
+User Query: Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.
+
+Initial Screenshot:
+<p align="center"><img src="./assets/306_start.png" alt="" style="width: 80%"/></p>
+
+Intermediate Screenshot:
+<p align="center"><img src="./assets/306_inter.png" alt="" style="width: 80%"/></p>
+
+Invoke Region Search in Step-Check Module and the resulted image:
+<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 80%"/></p>
+
+Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
+
+Final Screnshot:
+<p align="center"><img src="./assets/306_end.png" alt="" style="width: 80%"/></p>
 
 #### 🎈 Test with your own user query
 

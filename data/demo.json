@@ -3,5 +3,10 @@
         "project_id": "300",
         "user_query": "Set the transitions of the second ppt to Push",
         "video_path": "data\\project_files\\300. PowerPoint Applying Transitions\\07. PowerPoint Applying Transitions.mp4"
+    },
+    {
+        "project_id": "306",
+        "user_query": "Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.",
+        "video_path": "data\\project_files\\306. PowerPoint Lists\\12. PowerPoint Lists.mp4"
     }
 ]
