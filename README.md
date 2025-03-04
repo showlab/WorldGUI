@@ -8,7 +8,7 @@
 
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
-## 📢 Update (Stay tuned)
+# 📢 Update (Stay tuned)
 * [05/03/2025] Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker).
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
@@ -34,9 +34,9 @@
 
 <!-- An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed. -->
 
-## 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
+# 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
 
-### 1. 📂 Clone the Repository 
+## 1. 📂 Clone the Repository 
 Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
 Run the following command on **Conda Terminal**.
 ```bash
@@ -44,7 +44,7 @@ git clone https://github.com/showlab/WorldGUI.git
 cd WorldGUI
 ```
 
-### 2. 🔨 Env setup
+## 2. 🔨 Env setup
 
 To create a Conda virtual environment and activate it, follow these steps:
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ```
 Moreover, you can refer to the files under folder `.log` to manually install the corresponding modules.
 
-### 3. 🔧 Set API Key
+## 3. 🔧 Set API Key
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
 >```bash
@@ -71,7 +71,7 @@ We recommend running one or more of the following command to set API keys to the
 >$env:OPENAI_API_KEY="sk-xxxxx"
 >```
 
-### 4. 🔧 Set Google Clound Vision API
+## 4. 🔧 Set Google Clound Vision API
 We implement our GUI parser with the help of [google clound vision service](https://cloud.google.com/vision?hl=zh_cn). We recommend you following this [guidance](https://cloud.google.com/vision/product-search/docs/auth?hl=zh-cn) to save a local file for the identity verification.
 
 ```bash
@@ -82,9 +82,9 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 (Optional) Set the path of `KEY_FILE` in the path [agent/gui_parser/server.py#L18](https://github.com/showlab/WorldGUI/blob/main/agent/gui_parser/server.py#L18)
 
-### 5. ⭐ Quick Start
+## 5. ⭐ Quick Start
 
-#### Start the server
+### Start the server
 
 For windows:
 ```bash
@@ -93,7 +93,7 @@ For windows:
 
 Every time you change the files under the folder **`agent`**, you need to restart the server.
 
-#### Restart the server
+### Restart the server
 
 For windows:
 ```bash
@@ -101,7 +101,7 @@ For windows:
 .\shells\start_server.bat
 ```
 
-#### 💻 Test with a prepared demo case under the folder `data`:
+### 💻 Test with a prepared demo case under the folder `data`:
 ```bash
 python test_guithinker_demo.py
 ``` 
@@ -122,14 +122,14 @@ Reducing the resolution and directing the agent's focus toward highly relevant r
 Final Screnshot:
 <p align="center"><img src="./assets/306_end.png" alt="" style="width: 80%"/></p>
 
-#### 🎈 Test with your own user query
+### 🎈 Test with your own user query
 
 ```bash
 python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" --projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
 ``` 
 
 
-## ❤ Acknowledgement
+# ❤ Acknowledgement
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
@@ -144,7 +144,7 @@ python test_guithinker_custom.py --userquery "Set the transitions of the second 
 
 - [SWE-bench Multimodal](https://www.swebench.com/multimodal.html): SWE-bench Multimodal is a dataset for evaluating AI systems on visual software engineering tasks.
 
-## 🎓 BibTeX
+# 🎓 BibTeX
 
 If you find WorldGUI useful, please cite using this BibTeX:
 
