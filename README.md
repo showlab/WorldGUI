@@ -12,10 +12,13 @@
 
 <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
 <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
+
+<a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
+ </a>
 </div>
 
 
-Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easily deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
+Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
 
 ## Overview
 
@@ -118,7 +121,7 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 Start with your own query or included query in folder `data`.
 
-### Start the server
+### 5.1 Start the server
 
 We implemented a backend and frontend system that separates screenshot capture from agent execution, enabling remote deployment of the agent via API calls. The frontend can run on Windows or other platforms (e.g., mobile devices).
 
@@ -135,7 +138,7 @@ For windows:
 .\shells\end_server.bat
 .\shells\start_server.bat
 ```
-### 🎈 Test with your own user query
+### 🎈 5.2 Test with your own user query
 
 You can replace parameter `userquery` with your own query and provide a fil
 
@@ -144,7 +147,7 @@ python test_guithinker_custom.py --userquery "Set the transitions of the second 
 --projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
 ``` 
 
-### 💻 Test with a prepared demo case under the folder `data`:
+### 💻 5.3 Test with a prepared demo case under the folder `data`:
 ```bash
 python test_guithinker_demo.py
 ``` 
@@ -152,18 +155,18 @@ python test_guithinker_demo.py
 User Query: Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.
 
 Initial Screenshot:
-<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 70%"/></p>
 
 Intermediate Screenshot:
-<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 70%"/></p>
 
 Invoke the *Region Search* component in the Step-Check Module, which yields the following image:
-<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 70%"/></p>
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
 Final Screenshot:
-<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
 
 ## ☑️ Todo List
 
