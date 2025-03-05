@@ -1,20 +1,27 @@
-<p align="center" style="margin:0">
-  <img src="./assets/title.jpg">
-  <p align="center" style="margin-top: 10px">
-        <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
-        <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
-  </p>
-</p>
 
-<h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
+
+<div align="center">
+  <img style="width: 500px" src="./assets/guithinker-logo.png">
+  <h1 align="center">Computer-Using Thinker: Your Fully-Automated <br> Desktop GUI Agent with Critical Thinking</h1>
+</div>
+
+
+<div align="center" style="margin:0">
+  <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
+  <!-- <img style="width: 80%" src="./assets/title.jpg"> -->
+
+<a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
+<a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
+</div>
+
+<!-- <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4> -->
+
+Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easily deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
 
 ## Overview
 
-This repository is the official implementation of the [WorldGUI](https://arxiv.org/abs/2502.08047) paper. It features the new WorldGUI benchmark and the GUI-Thinker agent. 
+We now support deploying a GUI agent on Windows platform. Feel free to use our code as a foundation for your own AI agent development. Enjoy! 🎨
 
-We now support deploying a GUI agent on Windows platform **without requiring Docker or a virtual machine**. Feel free to use our code as a foundation for your own AI agent development. Enjoy! 🎨
-
-Visit our study on GUI Automation with [project page](https://showlab.github.io/WorldGUI).🌐
 
 <details>
 <summary style="font-size:18px">What is the WorldGUI?</summary>
@@ -52,7 +59,7 @@ An overview of <b>GUI-Thinker</b>. The Planner module receives the user query an
 
 </details>
 
-## 📢 Update (Stay tuned)
+## 📢 Update
 * [05/03/2025] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker). GUI-Thinker now supports various base LMMs through API calling, including GPT-4o, Gemini-2.0, and Claude-3.5-Sonnet. Local model support will be available soon.
 
@@ -62,7 +69,7 @@ An overview of <b>GUI-Thinker</b>. The Planner module receives the user query an
 
 ## 🚀 Getting Started with Computer-Using Agent (GUI-Thinker)
 
-## 1. 📂 Clone the Repository 
+## 1. Clone the Repository 📂
 Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
 Run the following command on **Conda Terminal**.
 ```bash
@@ -70,7 +77,7 @@ git clone https://github.com/showlab/WorldGUI.git
 cd WorldGUI
 ```
 
-## 2. 🔨 Env setup
+## 2. Env setup 🔨
 
 To create a Conda virtual environment and activate it, follow these steps:
 
@@ -88,7 +95,7 @@ pip install -r requirements.txt
 ```
 Moreover, you can refer to the files under folder `.log` to manually install the corresponding modules.
 
-## 3. ✏️ Set API Key
+## 3. Set API Key ✏️
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
 >```bash
@@ -97,7 +104,7 @@ We recommend running one or more of the following command to set API keys to the
 >$env:OPENAI_API_KEY="sk-xxxxx"
 >```
 
-## 4. 🔧 Set Google Clound Vision API
+## 4. Set Google Clound Vision API 🔧
 We implement our GUI parser with the help of [google clound vision service](https://cloud.google.com/vision?hl=zh_cn). We recommend you following this [guidance](https://cloud.google.com/vision/product-search/docs/auth?hl=zh-cn) to save a local file for the identity verification.
 
 ```bash
@@ -108,7 +115,9 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 (Optional) Set the path of `KEY_FILE` in the path [agent/gui_parser/server.py#L18](https://github.com/showlab/WorldGUI/blob/main/agent/gui_parser/server.py#L18)
 
-## 5. ⭐ Quick Start
+## 5. Quick Start ⭐
+
+Start with your own query or included query in folder `data`.
 
 ### Start the server
 
@@ -127,6 +136,14 @@ For windows:
 .\shells\end_server.bat
 .\shells\start_server.bat
 ```
+### 🎈 Test with your own user query
+
+You can replace parameter `userquery` with your own query and provide a fil
+
+```bash
+python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" \
+--projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
+``` 
 
 ### 💻 Test with a prepared demo case under the folder `data`:
 ```bash
@@ -141,19 +158,13 @@ Initial Screenshot:
 Intermediate Screenshot:
 <p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 80%"/></p>
 
-Invoke the Region Search in the Step-Check Module, which yields the following image:
+Invoke the *Region Search* component in the Step-Check Module, which yields the following image:
 <p align="center"><img src="./assets/region_locate.png" alt="" style="width: 80%"/></p>
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
 Final Screenshot:
 <p align="center"><img src="./assets/demo_end.png" alt="" style="width: 80%"/></p>
-
-### 🎈 Test with your own user query
-
-```bash
-python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" --projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
-``` 
 
 
 ## ❤ Acknowledgement
