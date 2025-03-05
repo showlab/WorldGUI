@@ -186,10 +186,6 @@ Subtask 5: Click "Create" button to confirm the new playlist creation
 <p align="left"><img src="./assets/step8.png" alt="" style="width: 70%"/></p>
 
 
-<video src="https://github.com/showlab/GUI-Thinker/blob/main/assets/demo.MP4" width="70%" height="240" autoplay muted controls></video>
-
-
-See the [demo video](https://github.com/showlab/GUI-Thinker/blob/main/assets/demo.MP4).
 
 ### 💻 5.3 Test with a simple demo case under the folder `data`:
 ```bash
