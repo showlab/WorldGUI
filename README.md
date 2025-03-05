@@ -2,7 +2,7 @@
 
 <div align="center">
   <img style="width: 500px" src="./assets/guithinker-logo.png">
-  <h1 align="center">Computer-Using Thinker: Your Fully-Automated <br> Desktop GUI Agent with Critical Thinking</h1>
+  <h1 align="center">Computer-Using Thinker: <br>Your Fully-Automated Desktop GUI Agent with Critical Thinking</h1>
 </div>
 
 
