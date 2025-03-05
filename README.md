@@ -130,6 +130,7 @@ python test_guithinker_custom.py --userquery "Set the transitions of the second 
 
 
 ## ❤ Acknowledgement
+- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work of the devleoping the codebase for GUI-Thinker.
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
