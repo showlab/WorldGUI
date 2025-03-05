@@ -5,7 +5,7 @@
   <h1 align="center">Computer-Using Thinker: <br>Your Fully-Automated Desktop GUI Agent with Critical Thinking</h1>
 </div>
 
-<h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
+<h4 align="center"> If you find our project useful, please consider giving it a star ⭐ on GitHub for our latest update.</h4>
 
 <div align="center" style="margin:0">
   <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
@@ -19,7 +19,14 @@
 
 Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
 
-## Overview
+
+<!-- ## ✨ Key Features
+- Easy Setup: Quick and straightforward installation steps to get you started with desktop GUI agent.
+- Comprehensive Documentation: Detailed guides, usage examples, and API references to help you understand and leverage the full capabilities of the project.
+- Community Driven: We welcome contributions, feedback, and ideas. Feel free to open issues or submit pull requests if you have suggestions for improvement.
+- Regular Updates: Our project is actively maintained, with new features and bug fixes released regularly. -->
+
+## Introduction
 
 We now support deploying a GUI agent on Windows platform. Feel free to use our code as a foundation for your own AI agent development. Enjoy! 🎨
 
@@ -139,7 +146,7 @@ For windows:
 ```
 ### 🎈 5.2 Test with your own user query
 
-You can replace parameter `userquery` with your own query and provide a fil
+You can replace parameter `userquery` with your own query and provide the path of project file. Our code will automatically invoking the file without human intervention.
 
 ```bash
 python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" \
