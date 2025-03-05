@@ -87,7 +87,7 @@ pip install -r requirements.txt
 ```
 Moreover, you can refer to the files under folder `.log` to manually install the corresponding modules.
 
-## 3. 🔧 Set API Key
+## 3. ✏️ Set API Key
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
 >```bash
