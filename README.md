@@ -14,7 +14,6 @@
 <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
 </div>
 
-<!-- <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4> -->
 
 Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easily deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
 
@@ -166,6 +165,20 @@ Reducing the resolution and directing the agent's focus toward highly relevant r
 Final Screenshot:
 <p align="center"><img src="./assets/demo_end.png" alt="" style="width: 80%"/></p>
 
+## ☑️ Todo List
+
+GUI-Thinker is continuously evolving! Here's what's coming:
+
+- 🖥️ **Lightweight Version**: Supporting a lightweight version specially design for Claude-3.5-Sonnet Computer Use without the GUI parser.
+
+- 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
+
+- 📊 **Locally-running Models**: Supporting the ShowUI or UI-TARS as the Actor in our framework.
+
+- 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
+
+Have ideas or suggestions? Feel free to open an issue! Stay tuned for more exciting updates! 🚀
+
 
 ## ❤ Acknowledgement
 - Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work of the devleoping the codebase for GUI-Thinker.
@@ -198,3 +211,5 @@ If you find WorldGUI useful, please cite using this BibTeX:
       url={https://arxiv.org/abs/2502.08047}, 
 }
 ```
+
+<h4 align="left"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
