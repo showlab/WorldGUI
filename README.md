@@ -1,42 +1,83 @@
-<p align="center" style="margin:0">
-  <img src="./assets/title.jpg">
-  <p align="center" style="margin-top: 10px">
-        <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
-        <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
-  </p>
-</p>
 
-<h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
-## 📢 Update (Stay tuned)
-* [05/03/2025] Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
-* [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker).
-* [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
+<div align="center">
+  <img style="width: 500px" src="./assets/guithinker-logo.png">
+  <h1 align="center">Your Fully-Automated Desktop GUI Agent with Critical Thinking</h1>
+</div>
 
-## What is the WorldGUI?
+<h4 align="center"> If you find our project useful, please consider giving it a star ⭐ on GitHub for our latest update.</h4>
+
+<div align="center" style="margin:0">
+  <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
+  <!-- <img style="width: 80%" src="./assets/title.jpg"> -->
+<a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
+<a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
+
+<a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
+ </a>
+</div>
+
+Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
+
+
+<!-- ## ✨ Key Features
+- Easy Setup: Quick and straightforward installation steps to get you started with desktop GUI agent.
+- Comprehensive Documentation: Detailed guides, usage examples, and API references to help you understand and leverage the full capabilities of the project.
+- Community Driven: We welcome contributions, feedback, and ideas. Feel free to open issues or submit pull requests if you have suggestions for improvement.
+- Regular Updates: Our project is actively maintained, with new features and bug fixes released regularly. -->
+
+## Introduction
+
+We now support deploying a GUI agent on Windows platform. Feel free to use our code as a foundation for your own AI agent development. Enjoy! 🎨
+
+
+<details>
+<summary style="font-size:18px">What is the WorldGUI?</summary>
+
 
 <p align="center"><img src="./assets/teaser.jpg" alt="" style="width: 50%"/></p>
 
 **WorldGUI** is a novel GUI benchmark that sets itself apart from earlier benchmarks like OSWorld, AssistGUI, and WindowsAgentArena. While those benchmarks primarily focus on static testing as shown in the left of the figure, WorldGUI designs each GUI task with various initial states to better reflect the complex and dynamic nature of real-world computer usage as shown in the right of the figure.
 
 
-<!-- ### Benchmark Overview -->
-<!-- 
+#### Benchmark Overview:
+
 <p align="center"><img src="./assets/benchoverview.jpg" alt="benchmark" style="width: 80%"/></p>
+An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment.
 
-<b>WorldGUI</b>: An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment. -->
+</details>
 
-## What is the GUI-Thinker?
+<details>
+<summary style="font-size:18px">What is the GUI-Thinker?</summary>
 
-**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to enhance task success rates. It dynamically adjusts its action commands when encountering unanticipated states(e.g., user settings are impossible known in advance)
+**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to make agent thinking before doing. 
+
+- GUI-Thinker is an end-to-end agent that accepts the user query and executes the plan step by step.
+
+- GUI-Thinker supports both instructional video and non-video as the inputs for controlling the computer like a human.
+
+- GUI-Thinker supports adjusting its actions before the Actor when encountering unpredicted interfaces (e.g., last time user settings are impossible to be predetermined when you open a popup window).
+
+- After the Actor, we propose to iteratively execute the verify-then-correct process to ensure the step completion.
+
+<!-- It dynamically adjusts its action commands when encountering unanticipated states(e.g., user settings are impossible known in advance) -->
 
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
+An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
 
-<!-- An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed. -->
+</details>
 
-## 🚀 Getting Started with Computer Use Agent (GUI-Thinker)
+## 📢 Update
+* [05/03/2025] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
+* [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker). GUI-Thinker now supports various base LMMs through API calling, including GPT-4o, Gemini-2.0, and Claude-3.5-Sonnet. Local model support will be available soon.
 
-## 1. 📂 Clone the Repository 
+* [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
+
+
+
+## 🚀 Getting Started with Computer-Using Agent (GUI-Thinker)
+
+## 1. Clone the Repository 📂
 Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
 Run the following command on **Conda Terminal**.
 ```bash
@@ -44,7 +85,7 @@ git clone https://github.com/showlab/WorldGUI.git
 cd WorldGUI
 ```
 
-## 2. 🔨 Env setup
+## 2. Env setup 🔨
 
 To create a Conda virtual environment and activate it, follow these steps:
 
@@ -62,7 +103,7 @@ pip install -r requirements.txt
 ```
 Moreover, you can refer to the files under folder `.log` to manually install the corresponding modules.
 
-## 3. 🔧 Set API Key
+## 3. Set API Key ✏️
 We recommend running one or more of the following command to set API keys to the environment variables. On Windows Powershell (via the set command if on cmd):
 
 >```bash
@@ -71,7 +112,7 @@ We recommend running one or more of the following command to set API keys to the
 >$env:OPENAI_API_KEY="sk-xxxxx"
 >```
 
-## 4. 🔧 Set Google Clound Vision API
+## 4. Set Google Clound Vision API 🔧
 We implement our GUI parser with the help of [google clound vision service](https://cloud.google.com/vision?hl=zh_cn). We recommend you following this [guidance](https://cloud.google.com/vision/product-search/docs/auth?hl=zh-cn) to save a local file for the identity verification.
 
 ```bash
@@ -82,16 +123,19 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 (Optional) Set the path of `KEY_FILE` in the path [agent/gui_parser/server.py#L18](https://github.com/showlab/WorldGUI/blob/main/agent/gui_parser/server.py#L18)
 
-## 5. ⭐ Quick Start
+## 5. Quick Start ⭐
 
-### Start the server
+Start with your own query or included query in folder `data`.
+
+### 5.1 Start the server
+
+We implemented a backend and frontend system that separates screenshot capture from agent execution, enabling remote deployment of the agent via API calls. The frontend can run on Windows or other platforms (e.g., mobile devices).
 
 For windows:
 ```bash
 .\shells\start_server.bat
 ```
-
-Every time you change the files under the folder **`agent`**, you need to restart the server.
+You can track the status by checking the files under folder `.log`. Every time you change the files under the folder **`agent`**, you need to restart the server.
 
 ### Restart the server
 
@@ -100,8 +144,16 @@ For windows:
 .\shells\end_server.bat
 .\shells\start_server.bat
 ```
+### 🎈 5.2 Test with your own user query
 
-### 💻 Test with a prepared demo case under the folder `data`:
+You can replace parameter `userquery` with your own query and provide the path of project file. Our code will automatically invoking the file without human intervention.
+
+```bash
+python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" \
+--projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
+``` 
+
+### 💻 5.3 Test with a prepared demo case under the folder `data`:
 ```bash
 python test_guithinker_demo.py
 ``` 
@@ -109,27 +161,36 @@ python test_guithinker_demo.py
 User Query: Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.
 
 Initial Screenshot:
-<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 70%"/></p>
 
 Intermediate Screenshot:
-<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 70%"/></p>
 
-Invoke the Region Search in the Step-Check Module, which yields the following image:
-<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 80%"/></p>
+Invoke the *Region Search* component in the Step-Check Module, which yields the following image:
+<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 70%"/></p>
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
 Final Screenshot:
-<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 80%"/></p>
+<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
 
-### 🎈 Test with your own user query
+## ☑️ Todo List
 
-```bash
-python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" --projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
-``` 
+GUI-Thinker is continuously evolving! Here's what's coming:
+
+- 🖥️ **Lightweight Version**: Supporting a lightweight version specially design for Claude-3.5-Sonnet Computer Use without the GUI parser.
+
+- 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
+
+- 📊 **Locally-running Models**: Supporting the ShowUI or UI-TARS as the Actor in our framework.
+
+- 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
+
+Have ideas or suggestions? Feel free to open an issue! Stay tuned for more exciting updates! 🚀
 
 
 ## ❤ Acknowledgement
+- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work on devleoping the codebase.
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
