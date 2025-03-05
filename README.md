@@ -111,12 +111,13 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="PATH_TO_KEY_FILE"
 
 ### Start the server
 
+We implemented a backend and frontend system that separates screenshot capture from agent execution, enabling remote deployment of the agent via API calls. The frontend can run on Windows or other platforms (e.g., mobile devices).
+
 For windows:
 ```bash
 .\shells\start_server.bat
 ```
-
-Every time you change the files under the folder **`agent`**, you need to restart the server.
+You can track the status by checking the files under folder `.log`. Every time you change the files under the folder **`agent`**, you need to restart the server.
 
 ### Restart the server
 
