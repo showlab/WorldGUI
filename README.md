@@ -189,7 +189,7 @@ Have ideas or suggestions? Feel free to open an issue! Stay tuned for more excit
 
 
 ## ❤ Acknowledgement
-- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work on devleoping the codebase.
+- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for his hard work on devleoping the codebase.
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
