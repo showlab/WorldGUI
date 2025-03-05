@@ -1,0 +1,13 @@
+{
+    "adobe acrobat": [
+        "When the text is highlighted with a gray background, the text is selected or highlighted.",
+        "If there is no text in the text box next to 'text', it indicates that the input was not successful.",
+        "After clicking a button in the Acrobat toolbar or menu, if the dropdown menu disappears, you can determine if the click was successful by checking the coordinates.",
+        "When selecting 'Add/Edit Web or Document Link', the mouse cursor will change to a crosshair style.",
+        "To confirm a page swap, check the thumbnails instead of the page numbers, as the numbers remain unchanged.",
+        "When placing a signature, it won't be saved until the document is clicked, even if the cursor shows the signature icon.",
+        "If the signature's position moves with the mouse without a click, it indicates that the signature has not been inserted.",
+        "If the photo's position moves with the mouse without a click, it indicates that the photo has not been placed.",
+        "Clicking 'Add/Edit Web or Document Link' changes the mouse to a crosshair and hides the 'Link' dropdown, indicating success."
+    ]
+}

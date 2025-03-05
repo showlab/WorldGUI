@@ -2,6 +2,8 @@
     "settings": [
         "If you can't find the desired content, please scroll the screen",
         "To scroll the content on the right, move the mouse to the blank area or an item on the right side without clicking, then scroll.",
-        "Use the moveTo() action to position the mouse before clicking through click()."
+        "Use the moveTo() action to position the mouse before clicking through click().",
+        "\"(UTC+05:00) Astana\" appearing on the screen doesn't mean it's selected. It's only selected when it's the only time zone visible.",
+        "The appearance of 'About' doesn't mean it's selected. You need to click it, and there will be a lot of device information on the screen."
     ]
 }

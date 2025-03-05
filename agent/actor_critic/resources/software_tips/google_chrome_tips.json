@@ -11,6 +11,7 @@
         "The Flickr website's download button is located at the bottom-right corner of the image.",
         "Clicking the browser's download button allows you to view the recently downloaded files, helping to confirm if the download was successful.",
         "When downloading photos on Flickr.com, avoid clicking the ads above the search bar.",
+        "When downloading images on Flickr.com, if the page redirects to another site, click the Flickr tab to return to the Flickr website.",
         "When downloading images on Flickr.com, the thumbnails under 'Everyone's photos' are downloadable images, while the row under 'From people you follow' shows users, not images.",
         "For operations that can only proceed after the previous actions are completed and the screen state has changed, please do not assume coordinates, and do not provide actions."
     ]

@@ -52,7 +52,7 @@ class AutoPC:
 
         _, current_task, _ = turn_text_steps_to_iter(plan)
         self.current_task = current_task
-        print(f"Current_task: {self.current_task.name}")
+        # print(f"Current_task: {self.current_task.name}")
         self.update_state({"plan": plan, "current_task": current_task})
         return plan
 

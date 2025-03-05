@@ -60,7 +60,7 @@ class StepCheck:
         main_goal, finished_tasks, current_task_text, next_task = self.get_task_details(current_task, history)
 
 
-        tips = self.get_software_tips(self.software_tips, software_name.lower().replace(' ', '_'))
+        tips = self.get_software_tips(self.software_tips, software_name.lower())
 
         # step checker before run the actor
         # initial values

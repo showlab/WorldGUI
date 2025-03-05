@@ -1,5 +1,5 @@
 {
-    "premiere_pro": [
+    "premiere pro": [
         "Don't move the playhead unless the task asks for it.",
         "Press ctrl-A to select the parameter before changing it.",
         "To change a setting, click on its value, not the name. For example, click \"1000\" instead of \"Position\" in \"Position 1000.\"",
