@@ -9,30 +9,50 @@
 <h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
 ## 📢 Update (Stay tuned)
-* [05/03/2025] Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
+* [05/03/2025] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker).
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
-## What is the WorldGUI?
+
+## About
+
+This repository is the official implementation of the [WorldGUI](https://arxiv.org/abs/2502.08047) paper. It features the new WorldGUI benchmark and the GUI-Thinker agent. Feel free to use our code as a foundation for your own AI agent development. Enjoy!
+
+<details>
+<summary style="font-size:18px">What is the WorldGUI?</summary>
+
 
 <p align="center"><img src="./assets/teaser.jpg" alt="" style="width: 50%"/></p>
 
 **WorldGUI** is a novel GUI benchmark that sets itself apart from earlier benchmarks like OSWorld, AssistGUI, and WindowsAgentArena. While those benchmarks primarily focus on static testing as shown in the left of the figure, WorldGUI designs each GUI task with various initial states to better reflect the complex and dynamic nature of real-world computer usage as shown in the right of the figure.
 
 
-<!-- ### Benchmark Overview -->
-<!-- 
+#### Benchmark Overview:
+
 <p align="center"><img src="./assets/benchoverview.jpg" alt="benchmark" style="width: 80%"/></p>
+An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment.
 
-<b>WorldGUI</b>: An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment. -->
+</details>
 
-## What is the GUI-Thinker?
+<details>
+<summary style="font-size:18px">What is the GUI-Thinker</summary>
 
-**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to enhance task success rates. It dynamically adjusts its action commands when encountering unanticipated states(e.g., user settings are impossible known in advance)
+**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to make agent thinking before doing. 
+
+- GUI-Thinker is an end-to-end agent that accepts the user query and executes the plan step by step.
+
+- GUI-Thinker supports both instructional video and non-video as the inputs for controlling the computer like a human.
+
+- GUI-Thinker supports adjusting its actions before the Actor when encountering unpredicted interfaces (e.g., last time user settings are impossible to be predetermined when you open a popup window).
+
+- After the Actor, we propose to iteratively execute the verify-then-correct process to ensure the step completion.
+
+<!-- It dynamically adjusts its action commands when encountering unanticipated states(e.g., user settings are impossible known in advance) -->
 
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
+An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
 
-<!-- An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed. -->
+</details>
 
 ## 🚀 Getting Started with Computer-Using Agent (GUI-Thinker)
 
