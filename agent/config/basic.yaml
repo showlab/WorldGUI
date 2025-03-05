@@ -2,8 +2,8 @@ planner_critic:
   host: localhost
   port: 5001
   url: "http://127.0.0.1:5001/api/planner_critic"
-  lmm: "gpt-4o-2024-08-06"
-  lmm_critic: "gpt-4o-2024-08-06"
+  lmm: "claude-3-5-sonnet-20241022"
+  lmm_critic: "claude-3-5-sonnet-20241022"
 gui_parser:
   host: localhost
   port: 5002
@@ -12,18 +12,18 @@ step_check:
   host: localhost
   port: 5003
   url: "http://127.0.0.1:5003/api/step_check"
-  lmm: "gpt-4o-2024-08-06"
+  lmm: "claude-3-5-sonnet-20241022"
 actor:
   host: localhost
   port: 5004
   url: "http://127.0.0.1:5004/api/actor"
-  lmm: "gpt-4o-2024-08-06"
+  lmm: "claude-3-5-sonnet-20241022"
 actorcritic:
   host: localhost
   port: 5005
   url: "http://127.0.0.1:5005/api/actorcritic"
-  lmm: "gpt-4o-2024-08-06"
-  critic_lmm: "gpt-4o-2024-08-06"
+  lmm: "claude-3-5-sonnet-20241022"
+  critic_lmm: "claude-3-5-sonnet-20241022"
 os_agent_settings:
   cache_dir: "./backend_cache"
 

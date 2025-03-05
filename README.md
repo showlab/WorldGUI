@@ -145,14 +145,47 @@ For windows:
 ```
 ### 🎈 5.2 Test with your own user query
 
-You can replace parameter `userquery` with your own query and provide the path of project file. Our code will automatically invoking the file without human intervention.
+Here, we provide a straightforward example demonstrating how to operate a YouTube video using the Claude-3.5-Sonnet as the base model. Check the configuration of file `agent\config\basic.yaml` to edit the base model.
 
+Command:
 ```bash
-python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" \
---projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
+python test_guithinker_custom.py --userquery "Open the video "https://www.youtube.com/watch?v=uTuuz__8gUM", add to watch later and create a watch list 'work & jazz'." --projfile_path "" --software_name "Youtube"
 ``` 
+Initial Screenshot:
+<p align="left"><img src="./assets/step0.png" alt="" style="width: 70%"/></p>
 
-### 💻 5.3 Test with a prepared demo case under the folder `data`:
+(Milestone 1) Task 1: Add video to Watch Later 
+
+Subtask 1: Click on "More actions" button [1231, 936]
+<p align="left"><img src="./assets/step1.png" alt="" style="width: 70%"/></p>
+Subtask 2: Click on "Save" option in the menu that appears
+<p align="left"><img src="./assets/step2.png" alt="" style="width: 70%"/></p>
+Subtask 3: Click on "Watch Later" option in the save menu
+<p align="left"><img src="./assets/step3.png" alt="" style="width: 70%"/></p>
+
+(Milestone 2) Task 2: Create new playlist "work & jazz" 
+
+Subtask 1: Click on "More actions" button again if the menu closed
+
+Output of Step-Check: `<Pass>`. Therefore no change in current step. (See the deatail design of Step-Check from [paper](https://arxiv.org/abs/2502.08047))
+
+<p align="left"><img src="./assets/step4.png" alt="" style="width: 70%"/></p>
+
+Subtask 2: Click on "Save" option if the save menu is not open
+
+Output of Step-Check: `<Pass>`. Therefore no change in current step.
+<p align="left"><img src="./assets/step5.png" alt="" style="width: 70%"/></p>
+
+Subtask 3: Click on "+ Create new playlist" option at the bottom of the save menu
+<p align="left"><img src="./assets/step6.png" alt="" style="width: 70%"/></p>
+
+Subtask 4: Type "work & jazz" in the playlist name field
+<p align="left"><img src="./assets/step7.png" alt="" style="width: 70%"/></p>
+
+Subtask 5: Click "Create" button to confirm the new playlist creation
+<p align="left"><img src="./assets/step8.png" alt="" style="width: 70%"/></p>
+
+### 💻 5.3 Test with a simple demo case under the folder `data`:
 ```bash
 python test_guithinker_demo.py
 ``` 
@@ -160,18 +193,18 @@ python test_guithinker_demo.py
 User Query: Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.
 
 Initial Screenshot:
-<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/demo_start.png" alt="" style="width: 70%"/></p>
 
 Intermediate Screenshot:
-<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/demo_inter.png" alt="" style="width: 70%"/></p>
 
 Invoke the *Region Search* component in the Step-Check Module, which yields the following image:
-<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/region_locate.png" alt="" style="width: 70%"/></p>
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
 Final Screenshot:
-<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
 
 ## ☑️ Todo List
 
