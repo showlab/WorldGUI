@@ -16,7 +16,7 @@
  </a>
 </div>
 
-Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
+Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/GUI-Thinker/).🌐
 
 
 <!-- ## ✨ Key Features
