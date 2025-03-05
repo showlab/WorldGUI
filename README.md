@@ -5,18 +5,17 @@
   <h1 align="center">Computer-Using Thinker: <br>Your Fully-Automated Desktop GUI Agent with Critical Thinking</h1>
 </div>
 
+<h4 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
 
 <div align="center" style="margin:0">
   <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
   <!-- <img style="width: 80%" src="./assets/title.jpg"> -->
-
 <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
 <a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
 
 <a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
  </a>
 </div>
-
 
 Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
 
@@ -184,7 +183,7 @@ Have ideas or suggestions? Feel free to open an issue! Stay tuned for more excit
 
 
 ## ❤ Acknowledgement
-- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work of the devleoping the codebase for GUI-Thinker.
+- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work on devleoping the codebase.
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
@@ -214,5 +213,3 @@ If you find WorldGUI useful, please cite using this BibTeX:
       url={https://arxiv.org/abs/2502.08047}, 
 }
 ```
-
-<h4 align="left"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h4>
