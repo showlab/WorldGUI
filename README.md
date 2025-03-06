@@ -186,9 +186,7 @@ Subtask 5: Click "Create" button to confirm the new playlist creation
 <p align="left"><img src="./assets/step8.png" alt="" style="width: 70%"/></p>
 
 
-See the demo of above steps: https://www.youtube.com/watch?v=RoJ-cbjfZmg
-
-
+See demo video of above steps: https://www.youtube.com/watch?v=RoJ-cbjfZmg
 
 ### 💻 5.3 Test with a simple demo case under the folder `data`:
 ```bash
@@ -210,8 +208,6 @@ Reducing the resolution and directing the agent's focus toward highly relevant r
 
 Final Screenshot:
 <p align="left"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
-
-See demo video of above: https://www.youtube.com/watch?v=RoJ-cbjfZmg
 
 ## ✅ Todo List
 
