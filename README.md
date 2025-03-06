@@ -150,7 +150,14 @@ Here, we provide a straightforward example demonstrating how to operate a YouTub
 Command:
 ```bash
 python test_guithinker_custom.py --userquery "Open the video "https://www.youtube.com/watch?v=uTuuz__8gUM", add to watch later and create a watch list 'work & jazz'." --projfile_path "" --software_name "Youtube"
-``` 
+```
+
+Demo Video (The video has been sped up):
+
+https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
+
+See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
+
 Initial Screenshot:
 <p align="left"><img src="./assets/step0.png" alt="" style="width: 70%"/></p>
 
@@ -185,8 +192,6 @@ Subtask 4: Type "work & jazz" in the playlist name field
 Subtask 5: Click "Create" button to confirm the new playlist creation
 <p align="left"><img src="./assets/step8.png" alt="" style="width: 70%"/></p>
 
-
-See demo video of above steps: https://www.youtube.com/watch?v=RoJ-cbjfZmg
 
 ### 💻 5.3 Test with a simple demo case under the folder `data`:
 ```bash
