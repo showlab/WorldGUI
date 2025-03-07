@@ -207,7 +207,7 @@ class AutoPC:
                 screenshot_path=screenshot_path,
                 history=self.history,
                 software_name=software_name,
-                if_screenshot=False,
+                if_screenshot=True,
             )
 
         if state == '<Critic>':

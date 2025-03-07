@@ -85,7 +85,7 @@ This tool can critiquing the completion of the current task.
                 main_goal,
                 current_task_text,
                 tips,
-                screenshot_path=None) # no screenshot provided
+                screenshot_path=screenshot_path) # no screenshot provided
             code = self.generate_correction(correction_prompt)
             return self.extract_code(code), "<Critic>"
         else:
@@ -274,7 +274,7 @@ str(Explain how to fix the previous mistake based on the feedback. Provide a con
 </Suggestion> 
 ```
 '''
-        return [text_prompt, screenshot_path] if screenshot_path is not None else [text_prompt]
+        return [text_prompt, screenshot_path[1]] if screenshot_path is not None else [text_prompt]
 
     def generate_correction(self, prompt):
         correction_results = run_lmm(

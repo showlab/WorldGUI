@@ -15,6 +15,7 @@
         "After scrolling, check if the time zone \"(UTC+05:00) Astana\" appears. Do not execute a click yet; leave the click operation for the next step.",
         "In the 'System' section, move the mouse to the right panel like Display or Sound using moveTo(), then use scroll() to find 'About'.",
         "'About' is at the bottom of the right panel. If you don't see it after one scroll, scroll again.",
-        "Use scroll(-1000) instead of press(pagedown)."
+        "Use scroll(-1000) instead of press(pagedown).",
+        "When setting the default app, click the search box under \"Set defaults for application\" to search for the software you want to set"
     ]
 }

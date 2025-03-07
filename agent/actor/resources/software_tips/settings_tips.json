@@ -11,6 +11,7 @@
         "When setting the time zone in the dropdown menu, if the desired time is earlier than the current one, scroll up to find it.",
         "To find \"(UTC+05:00) Asatna\" in the dropdown menu, hover over it and scroll up, as it is above \"(UTC+08:00)\".",
         "When selecting the time zone, if \"(UTC+05:00) Asatna\" isn't listed, you need to scroll up in the dropdown menu to find it.",
-        "The time zone dropdown menu is located below the \"Set the time zone automatically\" option."
+        "The time zone dropdown menu is located below the \"Set the time zone automatically\" option.",
+        "When setting the default app, click the search box under \"Set defaults for application\" to search for the software you want to set"
     ]
 }

@@ -5,7 +5,11 @@
         "When searching for target words or positions, add scrolling search in the plan to locate the target words or positions.",
         "Adding watermarks, links, and modifying fonts are all under the \"Edit PDF\" function. Select this tool before performing related tasks.",
         "After selecting 'Link Appearance,' enter the link address in the newly opened dialog box.",
-        "To sign, click 'Fill & Sign,' then 'Sign Yourself' in the top toolbar, and select 'Add Signature' from the dropdown menu.",
-        "To sign 'GUICritic', Scroll through the document to the signing position at first (use `Ctrl + L` to zoom out for a better view)."
+        "To sign, click 'Fill & Sign,' then click 'Sign Yourself' in the top toolbar, and select 'Add Signature' from the dropdown menu. These are 3 subtasks in plan that should be Clearly indicated.",
+        "To sign 'GUICritic', Scroll through the document to the signing position at first.",
+        "After entering the signature, click and apply to generate the signature.",
+        "After generating the signature, click on 'Signature of Student' to place the signature",
+        "Clearly indicate where the signature will be placed in the plan",
+        "When placing the signature \"GUICritic\" it must be placed above the horizontal line of 'Signature of Student'"
     ]
 }
