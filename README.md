@@ -7,17 +7,16 @@
 
 <h4 align="center"> If you find our project useful, please consider giving it a star ⭐ on GitHub for our latest update.</h4>
 
-<div align="center" style="margin:0">
+<div align="center" style="margin-bottom: 0">
   <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
   <!-- <img style="width: 80%" src="./assets/title.jpg"> -->
 <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
-<a href='https://showlab.github.io/WorldGUI'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
-
+<a href='https://showlab.github.io/GUI-Thinker'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
 <a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
  </a>
 </div>
 
-Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/WorldGUI).🌐
+Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/GUI-Thinker/).🌐
 
 
 <!-- ## ✨ Key Features
@@ -82,7 +81,7 @@ Open the Conda Terminal. (After installation Of Miniconda, it will appear in the
 Run the following command on **Conda Terminal**.
 ```bash
 git clone https://github.com/showlab/WorldGUI.git
-cd WorldGUI
+cd GUI-Thinker
 ```
 
 ## 2. Env setup 🔨
@@ -146,14 +145,55 @@ For windows:
 ```
 ### 🎈 5.2 Test with your own user query
 
-You can replace parameter `userquery` with your own query and provide the path of project file. Our code will automatically invoking the file without human intervention.
+Here, we provide a straightforward example demonstrating how to operate a YouTube video using the Claude-3.5-Sonnet as the base model. Check the configuration of file `agent\config\basic.yaml` to edit the base model.
 
+Command:
 ```bash
-python test_guithinker_custom.py --userquery "Set the transitions of the second ppt to Push" \
---projfile_path "data/project_files/300. PowerPoint Applying Transitions/project.pptx"
-``` 
+python test_guithinker_custom.py --userquery "Open the video "https://www.youtube.com/watch?v=uTuuz__8gUM", add to watch later and create a watch list 'work & jazz'." --projfile_path "" --software_name "Youtube"
+```
 
-### 💻 5.3 Test with a prepared demo case under the folder `data`:
+Demo Video (The video has been sped up):
+
+https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
+
+See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
+
+Initial Screenshot:
+<p align="left"><img src="./assets/step0.png" alt="" style="width: 70%"/></p>
+
+(Milestone 1) Task 1: Add video to Watch Later 
+
+Subtask 1: Click on "More actions" button [1231, 936]
+<p align="left"><img src="./assets/step1.png" alt="" style="width: 70%"/></p>
+Subtask 2: Click on "Save" option in the menu that appears
+<p align="left"><img src="./assets/step2.png" alt="" style="width: 70%"/></p>
+Subtask 3: Click on "Watch Later" option in the save menu
+<p align="left"><img src="./assets/step3.png" alt="" style="width: 70%"/></p>
+
+(Milestone 2) Task 2: Create new playlist "work & jazz" 
+
+Subtask 1: Click on "More actions" button again if the menu closed
+
+Output of Step-Check: `<Pass>`. Therefore no change in current step. (See the deatail design of Step-Check from [paper](https://arxiv.org/abs/2502.08047))
+
+<p align="left"><img src="./assets/step4.png" alt="" style="width: 70%"/></p>
+
+Subtask 2: Click on "Save" option if the save menu is not open
+
+Output of Step-Check: `<Pass>`. Therefore no change in current step.
+<p align="left"><img src="./assets/step5.png" alt="" style="width: 70%"/></p>
+
+Subtask 3: Click on "+ Create new playlist" option at the bottom of the save menu
+<p align="left"><img src="./assets/step6.png" alt="" style="width: 70%"/></p>
+
+Subtask 4: Type "work & jazz" in the playlist name field
+<p align="left"><img src="./assets/step7.png" alt="" style="width: 70%"/></p>
+
+Subtask 5: Click "Create" button to confirm the new playlist creation
+<p align="left"><img src="./assets/step8.png" alt="" style="width: 70%"/></p>
+
+
+### 💻 5.3 Test with a simple demo case under the folder `data`:
 ```bash
 python test_guithinker_demo.py
 ``` 
@@ -161,20 +201,20 @@ python test_guithinker_demo.py
 User Query: Select all text and apply numbered list for them. Use '1, 2, 3' symbol of numbered list.
 
 Initial Screenshot:
-<p align="center"><img src="./assets/demo_start.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/demo_start.png" alt="" style="width: 70%"/></p>
 
 Intermediate Screenshot:
-<p align="center"><img src="./assets/demo_inter.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/demo_inter.png" alt="" style="width: 70%"/></p>
 
 Invoke the *Region Search* component in the Step-Check Module, which yields the following image:
-<p align="center"><img src="./assets/region_locate.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/region_locate.png" alt="" style="width: 70%"/></p>
 
 Reducing the resolution and directing the agent's focus toward highly relevant regions will enhance its critique decisions.
 
 Final Screenshot:
-<p align="center"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
+<p align="left"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
 
-## ☑️ Todo List
+## ✅ Todo List
 
 GUI-Thinker is continuously evolving! Here's what's coming:
 
@@ -190,7 +230,7 @@ Have ideas or suggestions? Feel free to open an issue! Stay tuned for more excit
 
 
 ## ❤ Acknowledgement
-- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for him hard work on devleoping the codebase.
+- Special thanks to [Difei Gao](https://scholar.google.com/citations?user=No9OsocAAAAJ&hl=en) for his hard work on devleoping the codebase.
 
 - We express our great thanks to Kaiming Yang, Mingyi Yan, Wendi Yu for their hard work for data ananotation and baseline testing.
 
