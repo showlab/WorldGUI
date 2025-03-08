@@ -48,12 +48,13 @@
 - After the Actor, we propose to iteratively execute the verify-then-correct process to ensure the step completion. -->
 
 
-<p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
+<p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
+<p align="center">Figure 1: Overview of GUI-Thinker.</p>
 
-<p align="center"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
+<p align="center" style="margin:0"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
 
-<p align="center">Figure 1: Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
+<p align="center">Figure 2: Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
 
 <!-- </details> -->
 
