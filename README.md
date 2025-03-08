@@ -51,6 +51,10 @@
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
 
+<p align="center"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
+
+<p align="center">Figure 1: Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
+
 <!-- </details> -->
 
 ## 📢 Update
