@@ -66,7 +66,7 @@ https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
 
 See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
 
-## 🚀 Getting Started with Computer-Using Agent (GUI-Thinker)
+## 🚀 Getting Started
 
 ## 1. Clone the Repository 📂
 Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
