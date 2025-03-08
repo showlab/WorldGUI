@@ -34,11 +34,11 @@ Welcome to GUI-Thinker! GUI-Thinker is a basic yet comprehensive GUI agent with 
 
 **GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
--Planner-Critic (Post-Planning Critique): Self-corrects the initial plans to ensure their accuracy
+- Planner-Critic (Post-Planning Critique): Self-corrects the initial plans to ensure their accuracy
 
--Step-Check (Pre-Execution Validation): Remove redundant steps or modify them if necessary.
+- Step-Check (Pre-Execution Validation): Remove redundant steps or modify them if necessary.
 
--Actor-Critic (Post-Action Evaluation): Review the task completion status and apply necessary corrections.
+- Actor-Critic (Post-Action Evaluation): Review the task completion status and apply necessary corrections.
 
 <!-- - GUI-Thinker is an end-to-end agent that accepts the user query and executes the plan step by step.
 
