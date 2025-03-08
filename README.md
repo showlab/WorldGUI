@@ -60,6 +60,11 @@
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
 
+Demo Video (The video has been sped up):
+
+https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
+
+See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
 
 ## 🚀 Getting Started with Computer-Using Agent (GUI-Thinker)
 
@@ -139,11 +144,11 @@ Command:
 python test_guithinker_custom.py --userquery "Open the video "https://www.youtube.com/watch?v=uTuuz__8gUM", add to watch later and create a watch list 'work & jazz'." --projfile_path "" --software_name "Youtube"
 ```
 
-Demo Video (The video has been sped up):
+<!-- Demo Video (The video has been sped up):
 
 https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
 
-See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
+See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg -->
 
 Initial Screenshot:
 <p align="left"><img src="./assets/step0.png" alt="" style="width: 70%"/></p>
