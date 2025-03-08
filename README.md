@@ -24,13 +24,12 @@
 - Comprehensive Documentation: Detailed guides and usage examples to help you understand and leverage the full capabilities of the project.
 - Regular Updates: Our project is actively maintained, with new features and bug fixes released regularly. -->
 
-## Introduction
 
 
 <!-- <details> -->
 <!-- <summary style="font-size:18px">What is the GUI-Thinker?</summary> -->
 
-### What's new in GUI-Thinker?
+## ✨ What's new in GUI-Thinker?
 
 **GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
