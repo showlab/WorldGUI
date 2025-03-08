@@ -2,7 +2,7 @@
 
 <div align="center">
   <img style="width: 500px" src="./assets/guithinker-logo.png">
-  <h1 align="center">Your Fully-Automated Desktop GUI Agent with Critical Thinking</h1>
+  <h1 align="center"> A Basic yet Comprehensive GUI Agent Developed with Self-Reflection</h1>
 </div>
 
 <h4 align="center"> If you find our project useful, please consider giving it a star ⭐ on GitHub for our latest update.</h4>
@@ -16,55 +16,43 @@
  </a>
 </div>
 
-Welcome to GUI-Thinker! GUI-Thinker is a open-source and end-to-end Desktop GUI Agent **without requiring Docker or a virtual machine** for easy deployment. This agent is proposed in study [WorldGUI](https://showlab.github.io/GUI-Thinker/).🌐
+Welcome to GUI-Thinker! GUI-Thinker is a basic yet comprehensive GUI agent with self-reflection, deployable **without requiring Docker or a virtual machine**. It is included in the paper [WorldGUI](https://showlab.github.io/GUI-Thinker/).🌐
 
 
 <!-- ## ✨ Key Features
 - Easy Setup: Quick and straightforward installation steps to get you started with desktop GUI agent.
-- Comprehensive Documentation: Detailed guides, usage examples, and API references to help you understand and leverage the full capabilities of the project.
-- Community Driven: We welcome contributions, feedback, and ideas. Feel free to open issues or submit pull requests if you have suggestions for improvement.
+- Comprehensive Documentation: Detailed guides and usage examples to help you understand and leverage the full capabilities of the project.
 - Regular Updates: Our project is actively maintained, with new features and bug fixes released regularly. -->
 
 ## Introduction
 
-We now support deploying a GUI agent on Windows platform. Feel free to use our code as a foundation for your own AI agent development. Enjoy! 🎨
 
+<!-- <details> -->
+<!-- <summary style="font-size:18px">What is the GUI-Thinker?</summary> -->
 
-<details>
-<summary style="font-size:18px">What is the WorldGUI?</summary>
+### What's new in GUI-Thinker?
 
+**GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
-<p align="center"><img src="./assets/teaser.jpg" alt="" style="width: 50%"/></p>
+-Planner-Critic (Post-Planning Critique): Self-corrects the initial plans to ensure their accuracy
 
-**WorldGUI** is a novel GUI benchmark that sets itself apart from earlier benchmarks like OSWorld, AssistGUI, and WindowsAgentArena. While those benchmarks primarily focus on static testing as shown in the left of the figure, WorldGUI designs each GUI task with various initial states to better reflect the complex and dynamic nature of real-world computer usage as shown in the right of the figure.
+-Step-Check (Pre-Execution Validation): Remove redundant steps or modify them if necessary.
 
+-Actor-Critic (Post-Action Evaluation): Review the task completion status and apply necessary corrections.
 
-#### Benchmark Overview:
-
-<p align="center"><img src="./assets/benchoverview.jpg" alt="benchmark" style="width: 80%"/></p>
-An illustration of our proposed real-world GUI benchmark. The left shows that for each task, WorldGUI provides a user query, instructional video, and pre-actions. The pre-actions lead to different initial states. The key characteristic of our WorldGUI is the various initial states of the same task to stimulate the real-world testing process. The right shows the software included in our benchmark and the interactions about testing the agents in our GUI environment.
-
-</details>
-
-<details>
-<summary style="font-size:18px">What is the GUI-Thinker?</summary>
-
-**GUI-Thinker** is a comprehensive GUI agent that employs critical thinking to make agent thinking before doing. 
-
-- GUI-Thinker is an end-to-end agent that accepts the user query and executes the plan step by step.
+<!-- - GUI-Thinker is an end-to-end agent that accepts the user query and executes the plan step by step.
 
 - GUI-Thinker supports both instructional video and non-video as the inputs for controlling the computer like a human.
 
 - GUI-Thinker supports adjusting its actions before the Actor when encountering unpredicted interfaces (e.g., last time user settings are impossible to be predetermined when you open a popup window).
 
-- After the Actor, we propose to iteratively execute the verify-then-correct process to ensure the step completion.
+- After the Actor, we propose to iteratively execute the verify-then-correct process to ensure the step completion. -->
 
-<!-- It dynamically adjusts its action commands when encountering unanticipated states(e.g., user settings are impossible known in advance) -->
 
 <p align="center"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
-An overview of <b>GUI-Thinker</b>. The Planner module receives the user query and an instructional video as input and generates an initial plan for the Planner-Critic process. This plan is then refined and executed step by step. Before each step is passed to the Actor module, it undergoes a Step-Check. After the Actor produces an action, the Actor-Critic module iteratively verifies the completion of the action and makes corrections if needed.
 
-</details>
+
+<!-- </details> -->
 
 ## 📢 Update
 * [05/03/2025] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
