@@ -22,6 +22,7 @@
 <!-- ## ✨ Key Features
 - Easy Setup: Quick and straightforward installation steps to get you started with desktop GUI agent.
 - Comprehensive Documentation: Detailed guides and usage examples to help you understand and leverage the full capabilities of the project.
+- Community Driven: We welcome contributions, feedback, and ideas. Feel free to open issues or submit pull requests if you have suggestions for improvement.
 - Regular Updates: Our project is actively maintained, with new features and bug fixes released regularly. -->
 
 
@@ -39,13 +40,6 @@
 
 - Actor-Critic (Post-Action Evaluation): Review the task completion status and apply necessary corrections.
 
-<!-- - GUI-Thinker is an end-to-end agent that accepts the user query and executes the plan step by step.
-
-- GUI-Thinker supports both instructional video and non-video as the inputs for controlling the computer like a human.
-
-- GUI-Thinker supports adjusting its actions before the Actor when encountering unpredicted interfaces (e.g., last time user settings are impossible to be predetermined when you open a popup window).
-
-- After the Actor, we propose to iteratively execute the verify-then-correct process to ensure the step completion. -->
 
 
 <p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
@@ -64,12 +58,26 @@
 
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
+## ✅ Todo List
+
+GUI-Thinker is continuously evolving! Here's what's coming:
+
+- 🖥️ **Lightweight Version**: Supporting a lightweight version specially design for Claude-3.5-Sonnet Computer Use without the GUI parser.
+
+- 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
+
+- 📊 **Locally-running Models**: Supporting the ShowUI or UI-TARS as the Actor in our framework.
+
+- 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
+
+Feel free to open issues or submit pull requests if you have suggestions for improvement. Our project is actively maintained, with new features and bug fixes released regularly. 🚀
 
 Demo Video (The video has been sped up):
 
 https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
 
 See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
+
 
 ## 🚀 Getting Started
 
@@ -210,20 +218,6 @@ Reducing the resolution and directing the agent's focus toward highly relevant r
 
 Final Screenshot:
 <p align="left"><img src="./assets/demo_end.png" alt="" style="width: 70%"/></p>
-
-## ✅ Todo List
-
-GUI-Thinker is continuously evolving! Here's what's coming:
-
-- 🖥️ **Lightweight Version**: Supporting a lightweight version specially design for Claude-3.5-Sonnet Computer Use without the GUI parser.
-
-- 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
-
-- 📊 **Locally-running Models**: Supporting the ShowUI or UI-TARS as the Actor in our framework.
-
-- 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
-
-Have ideas or suggestions? Feel free to open an issue! Stay tuned for more exciting updates! 🚀
 
 
 ## ❤ Acknowledgement
