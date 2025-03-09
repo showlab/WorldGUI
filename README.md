@@ -69,8 +69,8 @@ Our codebases includes:
 - [x] **Step-Check:** Verifies task completion and redundancy using various output statuses (e.g., `<Modify>`, `<Pass>`, `<Continue>`, `<Finished>`). It also implements an LLM-driven region search module to locate target elements.
 - [x] **Actor:** Translates action descriptions into executable code (e.g., `click(100, 200)`).
 - [x] **Actor-Critic:** Checks task completion status by comparing before and after screenshots and uses an iterative action correction algorithm to gradually verify and correct actions.
-- [x] **Input with Instructional Video:** Processes an instructional video to generate subtitles, ensuring the agent follows the provided instructions.
-- [x] **Input without Instructional Video:** Supports the direct execution of computer-based tasks without the need for an instructional video.
+- [x] **Input with Instructional Video:** Supports the execution with instructional video.
+- [x] **Input without Instructional Video:** Supports the direct execution with user query.
 
 
 See our [paper](https://arxiv.org/abs/2502.08047) for detail. Our GUI-Thinker is along with a newly curted Desktop GUI benchmark WorldGUI.
