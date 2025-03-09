@@ -53,6 +53,8 @@
 <!-- </details> -->
 
 ## 📢 Update
+
+* [08/03/2025] We made a demo for showing the GUI-Thinker.
 * [05/03/2025] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
 * [05/03/2025] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker). GUI-Thinker now supports various base LMMs through API calling, including GPT-4o, Gemini-2.0, and Claude-3.5-Sonnet. Local model support will be available soon.
 
