@@ -133,4 +133,3 @@ If you have any questions or suggestions, please don't hesitate to let us know. 
 I'm open to discussing AI agents and research collaboration if you're interested. My personal Wechat is here:
 
 <p align="left" style="margin:0"><img src="./assets/henrywechat.jpg" alt="agent" style="width: 30%" /></p>
-
