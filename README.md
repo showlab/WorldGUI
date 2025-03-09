@@ -70,7 +70,7 @@ GUI-Thinker is continuously evolving! Here's what's coming:
 
 - 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
 
-Feel free to open issues or submit pull requests if you have suggestions for improvement. Our project is actively maintained, with new features and bug fixes released regularly. 🚀
+Feel free to open issues or submit pull requests if you have suggestions. Our project is actively maintained, with new features and bug fixes released regularly. 🚀
 
 Demo Video (The video has been sped up):
 
@@ -85,7 +85,7 @@ See 1080p version from https://www.youtube.com/watch?v=RoJ-cbjfZmg
 Open the Conda Terminal. (After installation Of Miniconda, it will appear in the Start menu.)
 Run the following command on **Conda Terminal**.
 ```bash
-git clone https://github.com/showlab/WorldGUI.git
+git clone https://github.com/showlab/GUI-Thinker.git
 cd GUI-Thinker
 ```
 
