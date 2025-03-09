@@ -126,4 +126,11 @@ If you find WorldGUI useful, please cite using this BibTeX:
 
 [![Star History Chart](https://api.star-history.com/svg?repos=showlab/GUI-Thinker&type=Date)](https://star-history.com/#showlab/GUI-Thinker&Date)
 
-🔔 If you have any questions or suggestions, please don't hesitate to let us know. You can directly email [Henry Hengyuan Zhao](https://zhaohengyuan1.github.io/) at NUS using the email address hubylidayuan@gmail.com, or post an issue on this repository.
+
+## 🔔 Contact
+If you have any questions or suggestions, please don't hesitate to let us know. You can directly email [Henry Hengyuan Zhao](https://zhaohengyuan1.github.io/) at NUS using the email address hubylidayuan@gmail.com, or post an issue on this repository. We welcome contributions. Feel free to submit pull requests if you have suggestions for improvement.
+
+I'm open to discussing AI agents and research collaboration if you're interested. My personal Wechat is here:
+
+<p align="left" style="margin:0"><img src="./assets/henrywechat.jpg" alt="agent" style="width: 40%" /></p>
+
