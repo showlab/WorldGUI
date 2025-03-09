@@ -106,7 +106,7 @@ See [Get Started](./Get%20Started.md) for local computer running.
 
 - [SWE-bench Multimodal](https://www.swebench.com/multimodal.html): SWE-bench Multimodal is a dataset for evaluating AI systems on visual software engineering tasks.
 
-# 🎓 BibTeX
+## 🎓 BibTeX
 
 If you find WorldGUI useful, please cite using this BibTeX:
 
