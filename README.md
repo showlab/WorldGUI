@@ -60,9 +60,6 @@
 
 * [13/02/2025] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
-<!-- ## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=showlab/GUI-Thinker&type=Date)](https://star-history.com/#showlab/GUI-Thinker&Date) -->
 
 ## ✅ Todo List
 
@@ -124,3 +121,9 @@ If you find WorldGUI useful, please cite using this BibTeX:
       url={https://arxiv.org/abs/2502.08047}, 
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=showlab/GUI-Thinker&type=Date)](https://star-history.com/#showlab/GUI-Thinker&Date)
+
+🔔 If you have any questions or suggestions, please don't hesitate to let us know. You can directly email [Henry Hengyuan Zhao](https://zhaohengyuan1.github.io/) at NUS using the email address hubylidayuan@gmail.com, or post an issue on this repository.
