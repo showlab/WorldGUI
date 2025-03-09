@@ -78,6 +78,9 @@ GUI-Thinker is continuously evolving! Here's what's coming:
 
 Feel free to open issues or submit pull requests if you have suggestions. Our project is actively maintained, with new features and bug fixes released regularly. 🚀
 
+
+## 🖥️ Demo of Computer Using
+
 Demo Video (The video has been sped up):
 
 https://github.com/user-attachments/assets/5d25c079-4c84-4435-8280-591f32f89700
