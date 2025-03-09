@@ -5,7 +5,7 @@
   <h1 align="center"> A Basic yet Comprehensive GUI Agent Developed with Self-Reflection</h1>
 </div>
 
-<h4 align="center"> If you find this repo useful, please give a star ⭐ for encouragement.</h4>
+<h4 align="center"> Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
 <div align="center" style="margin-bottom: 0">
   <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
