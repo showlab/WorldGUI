@@ -46,7 +46,7 @@ def main():
     last_screenshot_path = ""
     critic_count = 0
 
-    autopc = AutoPC(user_id=software_name, project_id=projectID)
+    autopc = AutoPC(software_name=software_name, project_id=projectID)
 
     focus_software(software_name)
     meta_data, screenshot_path = get_screenshot(software_name)

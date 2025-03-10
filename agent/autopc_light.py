@@ -1,10 +1,7 @@
 import os
 import pickle
-import datetime
-import random
 from agent.planner_critic.sender import send_planner_request
 from agent.planner_critic.task_manager import turn_text_steps_to_iter
-from agent.gui_parser.sender import send_gui_parser_request
 from agent.step_check.sender import send_stepcheck_request
 from agent.actor.sender import send_actor_request
 from agent.actor_critic.sender import send_actor_critic_request
@@ -17,17 +14,14 @@ class AutoPC:
         self, 
         software_name=None, 
         project_id=None
-    ):
-        self.maximum_step = 50
-        # self.action_countdown = 100
-        
+    ):        
         self.task_id = f"{software_name}_{project_id}"
         self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "autopc", self.task_id)
         os.makedirs(self.cache_folder, exist_ok=True)
         print(f"Cache folder: {self.cache_folder}")
         
         self.step = 0
-        self.history = []  # [{task: ,code, ocr(json), screenshot_path, gui,  }]
+        self.history = []
         self.current_task = None
         self.reset_state()
         self.if_critic = False
@@ -55,18 +49,6 @@ class AutoPC:
         print(f"Current_task: {self.current_task.name}")
         self.update_state({"plan": plan, "current_task": current_task})
         return plan
-
-    @state_updater("Parsing GUI ...")
-    def run_gui_parser(self, software_name, screenshot_path, meta_data):
-        parsed_screenshot = send_gui_parser_request(
-            url=self.gui_parser_url,
-            software_name=software_name,
-            screenshot_path=screenshot_path,
-            meta_data=meta_data, # TODO: Make it optional
-            task_id=self.task_id,
-            step_id=self.step,
-        )
-        return parsed_screenshot
     
     @state_updater("Running Step-Check ...")
     def run_step_check(self, 
@@ -108,9 +90,7 @@ class AutoPC:
         software_name,
         history,
         if_screenshot):
-        
-        # error_message, next_step_hint, critic_decision = None, None, "Continue"
-
+    
         response = send_actor_critic_request(
             url=self.actorcritic_url,
             current_task=current_task,
@@ -280,45 +260,3 @@ class AutoPC:
                 }
             )
         pickle.dump(self.history, open(f"{self.cache_folder}/history.pkl", "wb"))
-
-    def reset(self):
-        self.current_task = None
-        self.step = 0
-        self.history = []
-        self.reset_state()
-
-    def reset_state(self):
-        self.current_state = {
-            "in_progress": False,
-            "plan": "",
-            "current_step": -1,
-            "current_progress": None,
-            "current_task": None,
-            "code": None,
-        }
-
-    def update_state(self, updates):
-        for key, value in updates.items():
-            if key in self.current_state:
-                self.current_state[key] = value
-                if key == "current_progress":
-                    print(f"Current progress: {value}")
-
-    def get_state(self, key=None):
-        return_keys = [
-            "in_progress",
-            "plan",
-            "current_step",
-            "current_progress",
-            "code",
-        ]
-        if key:
-            return self.current_state.get(key, None)
-        else:
-            return {k: v for k, v in self.current_state.items() if k in return_keys}
-
-    def generate_task_id(self):
-        # Time-based UUID
-        timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-        rand_str = "".join(random.choices("abcdefghijklmnopqrstuvwxyz0123456789", k=5))
-        self.task_id = f"{timestamp}_{rand_str}"

@@ -5,18 +5,17 @@
   <h1 align="center"> A Basic yet Comprehensive GUI Agent Developed with Self-Reflection</h1>
 </div>
 
-<h4 align="center"> Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
+<!-- <h4 align="center"> Welcome to GUI-Thinker! This repo includes both the proposed GUI Benchmark <a href='https://showlab.github.io/GUI-Thinker'>WorldGUI</a> and a new GUI agent <b>GUI-Thinker</b> with highly adaptive ability facing changing GUI Env.
+</h4> -->
+
+<h4 align="center">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
 <div align="center" style="margin-bottom: 0">
-  <!-- <img style="width: 70%" src="./assets/guithinker-logo.png"> -->
-  <!-- <img style="width: 80%" src="./assets/title.jpg"> -->
 <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
 <a href='https://showlab.github.io/GUI-Thinker'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
 <a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
  </a>
 </div>
-
-<!-- Welcome to GUI-Thinker! GUI-Thinker is a basic yet comprehensive GUI agent with self-reflection, deployable **without requiring Docker or a virtual machine**. It is included in the paper [WorldGUI](https://showlab.github.io/GUI-Thinker/).🌐 -->
 
 
 <details>
