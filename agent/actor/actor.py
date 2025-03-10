@@ -90,9 +90,7 @@ Invoke command: lmm_actor(query, visual[i])
         
         # Software Usage Tips
         tips = self.get_software_tips(software_name.lower())
-        
-        # Code History
-        code_history = self.get_code_history_for_current_task(history)['code']
+    
 
         # Run lmm to get code
         prompt = self.construct_prompt(
@@ -101,7 +99,6 @@ Invoke command: lmm_actor(query, visual[i])
             finished_tasks=finished_tasks, # This is for provide some context for the current task
             current_task=current_task_text, 
             tips=tips, 
-            code_history=code_history,
             screenshot_path=screenshot_path if screenshot_path else None,
             if_screenshot=if_screenshot
         )
@@ -141,7 +138,6 @@ Invoke command: lmm_actor(query, visual[i])
         finished_tasks, 
         current_task,
         tips, 
-        code_history, 
         screenshot_path,
         if_screenshot
     ):
@@ -162,33 +158,29 @@ General Rules:
 1. Don't write an algorithm to search on the GUI data, directly fill the coordinates in the corresponding API.
 2. MUST REMEMBER all the parameters in the function should be filled with the specific constant, not the variable.
 3. IMPORTANT: Sometimes you need to do some reasoning or calculation for the position. You MUST do it in the comment of the code. 
-4. Please prioritize using our provided custom API.
-5. Follow exactly the instructions in the task description. Don't redo tasks in finished_tasks and in next_task.
-6. MUST NOT click on elements not shown in the GUI. If you think one task cannot be done, explain the reason in the one line comment and do nothing. Comments format "# ```Reason: xxx```".  
-7. Add one line "# finish" at the end of the code, if you think the provided task is finished.
-8. For navigation-related tasks on a page or document, follow these steps to do the reasoning. Provide reasoning steps in the comments: 
+4. Follow exactly the instructions in the task description. Don't redo tasks in finished_tasks.
+5. For navigation-related tasks on a page or document, follow these steps to do the reasoning. Provide reasoning steps in the comments: 
     1) Check if the required information is displayed on the screenshot. MUST Answer this question in the comment of the code.
     2) If info is NOT found, use `press('pagedown')` one time to scroll down.
-    3) If info is found, do nothing, output "# finish"
+
 
 
 Software Usage Tips:
 {tips}
 
-Previously executed code for this task (Do not regenerate them):
-{code_history}
-
 ==============================
+
+Output format:
+```output
+<Code>
 Now let's complete the code to achieve the command:
 from pyautogui import click, write, hotkey, press, scroll, keyDown, keyUp, doubleClick
 # Don't import any other libraries and functions
-
-The output code should be in following format:
-```python
-newly generated code...
+</Code>
+<Reason>
+Please give your reasoning steps...
+</Reason>
 ```
-
-# Remember to reason in comment if needed.
 '''
 
         return [text_prompt, screenshot_path] if if_screenshot else [text_prompt]
@@ -199,39 +191,22 @@ newly generated code...
         code = run_lmm(
             prompt,
             lmm=self.lmm,
-            max_tokens=500, 
-            temperature=0, 
-            stop=["update_gui"]
+            max_tokens=1000, 
+            temperature=0
         )
         
         code = self.extract_code(code)
-        if "# finish" not in code:
-            code += "\nupdate_gui()"
-        # return self.post_process_code(code)
         return code
-
-    def post_process_code(self, code):
-        """Post-process the generated code to adapt to standards and replace API calls."""
-        processed_code = []
-        for line in code.split("\n"):
-            if not line.strip().startswith("#"):
-                for api in self.available_api.values():
-                    if api.name in line:
-                        line = line.replace(api.name, f"self.available_api['{api.name}']")
-                        line = eval(line)  # Potential security risk, consider safer alternatives
-            processed_code.append(line)
-        return "\n".join(processed_code)
 
     @staticmethod
     def extract_code(input_string):
-        # Regular expression to extract content starting from '```python' until the end if there are no closing backticks
-        pattern = r'```python(.*?)(```|$)'
+        pattern = r'<Code>(.*?)</Code>'
         
         # Extract content
         matches = re.findall(pattern, input_string, re.DOTALL)  # re.DOTALL allows '.' to match newlines as well
         
         # Return the first match if exists, trimming whitespace and ignoring potential closing backticks
-        return matches[0][0].strip() if matches else input_string
+        return matches[0].strip() if matches else ""
 
     @staticmethod
     def check_resume(history):

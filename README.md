@@ -1,24 +1,25 @@
 
 
 <div align="center">
-  <img style="width: 500px" src="./assets/logo.png">
-  <h1 align="center"> 
-  <!-- Enable AI Agent to control your PC 🤖 -->
+  <img style="width: 100%" src="./assets/logo.png">
+  <h1 align="center">
   A Basic yet Comprehensive GUI Agent Developed with Self-Reflection
   </h1>
 </div>  
+
 
 <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 <h4 align="center">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
-<div align="center" style="margin: 0">
-<a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
-<a href='https://showlab.github.io/GUI-Thinker'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
-<a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'></a>
+<h5 align="center">
 
+<!-- [![GitHub stars](https://img.shields.io/github/stars/showlab/GUI-Thinker?style=social)](https://github.com/gregpr07/browser-use/stargazers) -->
+[![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
+[![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
+[![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-</div>
+</h5>
 
 
 <details>

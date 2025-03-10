@@ -258,8 +258,7 @@ General Rules:
 2. MUST REMEMBER all the parameters in the function should be filled with the specific constant, not the variable.
 3. IMPORTANT: Sometimes you need to do some reasoning or calculation for the position. You MUST do it in the comment of the code. 
 4. Follow exactly the instructions in the task description. Don't redo tasks in finished_tasks.
-5. MUST NOT click on elements not shown in the GUI. If you think one task cannot be done, explain the reason in the one line comment and do nothing. Comments format "# ```Reason: xxx```".  
-6. For navigation-related tasks on a page or document, follow these steps to do the reasoning. Provide reasoning steps in the comments: 
+5. For navigation-related tasks on a page or document, follow these steps to do the reasoning. Provide reasoning steps in the comments: 
     1) Check if the required information is displayed on the screenshot. MUST Answer this question in the comment of the code.
     2) If info is NOT found, use `press('pagedown')` one time to scroll down.
 
@@ -323,7 +322,7 @@ str(Explain how to fix the previous mistake based on the feedback. Provide a con
 
     @staticmethod
     def extract_code(input_string):
-        # Regular expression to extract content starting from '```python' until the end if there are no closing backticks
+        # Regular expression to extract content starting from '<Code>' until the end if there are no closing backticks
         pattern = r'<Code>(.*?)</Code>'
         
         # Extract content
@@ -343,7 +342,7 @@ str(Explain how to fix the previous mistake based on the feedback. Provide a con
 
     @staticmethod
     def extract_refer_gui(input_string):
-        # Regular expression to extract content starting from '```python' until the end if there are no closing backticks
+        # Regular expression to extract content starting from '```plaintext' until the end if there are no closing backticks
         pattern = r'```plaintext(.*?)```'
         
         # Extract content

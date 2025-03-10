@@ -9,18 +9,16 @@ import argparse
 import subprocess
 
 from agent.autopc_light import AutoPCLight
-from agent.utils.execute_utils import post_process_gui_code
 from agent.utils.gui_capture import get_screenshot, focus_software
-from agent.gui_parser.sender import send_gui_parser_request
-from agent.actor.utils import format_gui, compress_gui
 
 from agent.config import basic_config
 
 def main():
     parser = argparse.ArgumentParser(description="GUI-Thinker Locally Running")
     parser.add_argument("--software_name", type=str, default="Settings")
-    parser.add_argument("--userquery", type=str, default="Enable Autocorrect Misspelled Words")
+    parser.add_argument("--userquery", type=str, default="Change the taskbar location on screen to Left.")
     parser.add_argument("--projectID", type=str, default="000", help="The ID of current task")
+    parser.add_argument("--video_path", type=str, default="D:\\Documents\\guicriticdata\\metataskdata\\projectfiles\\settings\\703\\3.Move Start Button alignment.mp4")
     parser.add_argument("--projfile_path", type=str, default="", help="the file ready to operate")
     parser.add_argument("--maximum_step", type=int, default=20, help="total steps")
     parser.add_argument("--max_critic_trials", type=int, default=3, help="set the maiximum trials of critic times")
@@ -49,10 +47,8 @@ def main():
     autopc = AutoPCLight(software_name=software_name, project_id=projectID)
 
     focus_software(software_name)
-    meta_data, screenshot_path = get_screenshot(software_name)
+    _, screenshot_path = get_screenshot(software_name)
 
-
-    aug_name = "meta"
     new_screenpath = os.path.join("%s"%(saved_folder), software_name, "%s_start.png"%(projectID))
 
     print('Save result in', new_screenpath)
@@ -60,20 +56,15 @@ def main():
     shutil.copy(screenshot_path, new_screenpath)
 
 
-    gui_results = send_gui_parser_request(basic_config['gui_parser']['url'], software_name, screenshot_path, meta_data, task_id=projectID, step_id="1")
-    gui_info = compress_gui(copy.deepcopy(gui_results))
-    gui_info = "\n".join(format_gui(gui_info))
-
-
     print('User Query:', query)
 
     focus_software(software_name)
-    plan = autopc.run_planner(query, software_name, screenshot_path, gui_info, video_path)
+    plan = autopc.run_planner(query, software_name, screenshot_path, "", video_path)
 
     print('Plan:\n', plan)
 
     for idx in range(maximum_step):
-        meta_data, screenshot_path = get_screenshot(software_name)
+        _, screenshot_path = get_screenshot(software_name)
         
         print("===Current task===", "Index:",  idx, state)
         print(autopc.current_task.name.strip())
@@ -84,12 +75,13 @@ def main():
                                                     screenshot_path, 
                                                     software_name,
                                                     if_screenshot=True)
-        
+        print('index', idx, 'last_screenshot_path', last_screenshot_path, 'screenshot_path', screenshot_path)
         ## execute the action code
         if code != "":
             focus_software(software_name)
-            exe_code = post_process_gui_code(code, software_name)
-            exec(exe_code)
+            # exe_code = post_process_gui_code(code, software_name)
+            print(code)
+            exec(code)
             last_screenshot_path = screenshot_path
         
         if state == '<Continue>':

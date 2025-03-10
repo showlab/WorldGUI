@@ -87,7 +87,6 @@ class AutoPCLight:
         parsed_screenshot,
         screenshot_path,
         software_name,
-        history,
         if_screenshot):
     
         response = send_actor_critic_request(
@@ -187,7 +186,6 @@ class AutoPCLight:
                 current_action=code, 
                 parsed_screenshot=None,
                 screenshot_path=[last_screenshot_path, screenshot_path],
-                history=self.history,
                 software_name=software_name,
                 if_screenshot=if_screenshot)
 

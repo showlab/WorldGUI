@@ -39,7 +39,7 @@ class CriticPlanner():
         return output
 
     def extract_plan(self, input_string):
-        # Regular expression to extract content from '```python ... ```'
+        # Regular expression to extract content from '```plan ... ```'
         pattern = r'```plan(.*?)```'
         # Extract content
         matches = re.findall(pattern, input_string, re.DOTALL)  # re.DOTALL allows '.' to match newlines as well
@@ -169,8 +169,7 @@ Note that:
 5) The action types in Subtask should be in [Click/DoubleClick/RightClick, Scroll, Drag, Type, Write, Press] 
 6) Avoid generate navigation or location actions, as they don't align with any specified step above; directly click on the desired link instead. 
 
-Refined steps:'''  # User Screenshot Summary: {gui_summary}
-
+Refined steps:'''
 
         if len(query) > 200:
             query = query[:200]
@@ -206,7 +205,7 @@ Note that:
 5) The action types in Subtask should be in [Click/DoubleClick/RightClick, Scroll, Drag, Type, Write, Press] 
 6) Avoid generate navigation or location actions, as they don't align with any specified step above; directly click on the desired link instead. 
 
-Refined steps:'''  # User Screenshot Summary: {gui_summary}
+Refined steps:'''
 
 
         if len(query) > 200:

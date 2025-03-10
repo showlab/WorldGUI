@@ -33,7 +33,6 @@ def is_url_or_filepath(input_string):
     return "Invalid"
 
 def extract_data(input_string, data_type):
-    # Regular expression to extract content starting from '```python' until the end if there are no closing backticks
     pattern = f'```{data_type}' + r'(.*?)(```|$)'
     # Extract content
     # re.DOTALL allows '.' to match newlines as well

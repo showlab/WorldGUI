@@ -13,7 +13,7 @@ from agent.utils.server_utils import generate_task_id, setup_directories, save_r
 
 
 # Setup logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuration
 BASE_DIR = "actor"
