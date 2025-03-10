@@ -8,7 +8,7 @@ import argparse
 
 import subprocess
 
-from agent.autopc_fast import AutoPCLight
+from agent.autopc_fast import AutoPCFast
 from agent.utils.gui_capture import get_screenshot, focus_software
 
 from agent.config import basic_config
@@ -18,7 +18,7 @@ def main():
     parser.add_argument("--software_name", type=str, default="Settings")
     parser.add_argument("--userquery", type=str, default="Change the taskbar location on screen to Left.")
     parser.add_argument("--projectID", type=str, default="000", help="The ID of current task")
-    parser.add_argument("--video_path", type=str, default="D:\\Documents\\guicriticdata\\metataskdata\\projectfiles\\settings\\703\\3.Move Start Button alignment.mp4")
+    parser.add_argument("--video_path", type=str, default="data\project_files\\706\\6. Enable Autocorrect Misspelled Words.mp4")
     parser.add_argument("--projfile_path", type=str, default="", help="the file ready to operate")
     parser.add_argument("--maximum_step", type=int, default=20, help="total steps")
     parser.add_argument("--max_critic_trials", type=int, default=3, help="set the maiximum trials of critic times")
