@@ -39,11 +39,11 @@
 <p align="center" style="margin:0"><img src="./assets/plannercritic_flow.png" alt="agent" style="width: 60%" /></p>
 <p align="center">State-Aware Planner and Planner-Critic modules.</p>
 
-<p align="center" style="margin:0"><img src="./assets/stepcheck_flow.png" alt="agent" style="width: 80%" /></p>
+<p align="center" style="margin:0"><img src="./assets/stepcheck_flow.png" alt="agent" style="width: 60%" /></p>
 
 <p align="center">Step-Check module.</p>
 
-<p align="center" style="margin:0"><img src="./assets/actorcritic_flow.png" alt="agent" style="width: 80%" /></p>
+<p align="center" style="margin:0"><img src="./assets/actorcritic_flow.png" alt="agent" style="width: 60%" /></p>
 
 <p align="center">Actor-Critic module.</p>
 
