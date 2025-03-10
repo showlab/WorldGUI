@@ -47,10 +47,6 @@
 
 <p align="center">Actor-Critic module.</p>
 
-<p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
-
-<p align="center">Overall framework of GUI-Thinker.</p>
-
 <p align="center" style="margin:0"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
 
 <p align="center">Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
