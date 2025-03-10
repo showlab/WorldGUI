@@ -30,7 +30,6 @@ class AutoPC:
         self.history = []  # [{task: ,code, ocr(json), screenshot_path, gui,  }]
         self.current_task = None
         self.reset_state()
-        self.if_critic = False
 
         self.gui_parser_url = basic_config['gui_parser']['url']
         self.step_check_url = basic_config['step_check']['url']
@@ -168,7 +167,6 @@ class AutoPC:
     def run_step(
         self,
         state,
-        query,
         code,
         current_task,
         meta_data, 

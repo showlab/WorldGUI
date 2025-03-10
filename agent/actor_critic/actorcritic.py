@@ -33,7 +33,7 @@ This tool can critiquing the completion of the current task.
     def __call__(self,
                 current_task,
                 current_action,
-                gui,
+                parsed_screenshot,
                 screenshot_path=None,
                 history=None,
                 software_name=None,
@@ -56,7 +56,10 @@ This tool can critiquing the completion of the current task.
         main_goal, finished_tasks, current_task_text, next_task = self.get_task_details(current_task, history)
         
         # GUI Info
-        compressed_gui = self.compress_and_format_gui(gui)
+        if parsed_screenshot is not None:
+            compressed_gui = self.compress_and_format_gui(parsed_screenshot)
+        else:
+            compressed_gui = ""
 
         # software tips
         critic_tips = self.get_software_tips(self.critic_software_tips, software_name.lower())
@@ -71,7 +74,11 @@ This tool can critiquing the completion of the current task.
         if success_flag.lower() == 'false':
             
             ## locate the gui info
-            reffered_gui = self.locate_gui_info(compressed_gui, main_goal, current_task_text)
+
+            if compress_gui:
+                reffered_gui = self.locate_gui_info(compressed_gui, main_goal, current_task_text)
+            else:
+                reffered_gui = ""
 
             if current_action != None:
                 current_action = self.extract_purecode(current_action) # only pure code, no reasoning description

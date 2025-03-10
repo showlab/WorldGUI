@@ -8,7 +8,7 @@ import argparse
 
 import subprocess
 
-from agent.autopc import AutoPC
+from agent.autopc_light import AutoPCLight
 from agent.utils.execute_utils import post_process_gui_code
 from agent.utils.gui_capture import get_screenshot, focus_software
 from agent.gui_parser.sender import send_gui_parser_request
@@ -18,10 +18,10 @@ from agent.config import basic_config
 
 def main():
     parser = argparse.ArgumentParser(description="GUI-Thinker Locally Running")
-    parser.add_argument("--software_name", type=str, default="PowerPoint")
-    parser.add_argument("--userquery", type=str, default="Set the transitions of the second ppt to Push")
+    parser.add_argument("--software_name", type=str, default="Settings")
+    parser.add_argument("--userquery", type=str, default="Enable Autocorrect Misspelled Words")
     parser.add_argument("--projectID", type=str, default="000", help="The ID of current task")
-    parser.add_argument("--projfile_path", type=str, default="data/project_files/300. PowerPoint Applying Transitions/project.pptx", help="the file ready to operate")
+    parser.add_argument("--projfile_path", type=str, default="", help="the file ready to operate")
     parser.add_argument("--maximum_step", type=int, default=20, help="total steps")
     parser.add_argument("--max_critic_trials", type=int, default=3, help="set the maiximum trials of critic times")
     args = parser.parse_args()
@@ -46,7 +46,7 @@ def main():
     last_screenshot_path = ""
     critic_count = 0
 
-    autopc = AutoPC(software_name=software_name, project_id=projectID)
+    autopc = AutoPCLight(software_name=software_name, project_id=projectID)
 
     focus_software(software_name)
     meta_data, screenshot_path = get_screenshot(software_name)
@@ -78,10 +78,8 @@ def main():
         print("===Current task===", "Index:",  idx, state)
         print(autopc.current_task.name.strip())
         code, state, current_task = autopc.run_step(state,
-                                                    query,
                                                     code,
                                                     autopc.current_task, 
-                                                    meta_data, 
                                                     last_screenshot_path,
                                                     screenshot_path, 
                                                     software_name,

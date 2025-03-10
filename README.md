@@ -1,24 +1,28 @@
 
 
 <div align="center">
-  <img style="width: 500px" src="./assets/guithinker-logo.png">
-  <h1 align="center"> A Basic yet Comprehensive GUI Agent Developed with Self-Reflection</h1>
-  <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
-</div>
+  <img style="width: 500px" src="./assets/logo.png">
+  <h1 align="center"> 
+  <!-- Enable AI Agent to control your PC 🤖 -->
+  A Basic yet Comprehensive GUI Agent Developed with Self-Reflection
+  </h1>
+</div>  
 
+<p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 <h4 align="center">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
-<div align="center" style="margin-bottom: 0">
+<div align="center" style="margin: 0">
 <a href="https://arxiv.org/abs/2502.08047"><img src='https://img.shields.io/badge/arXiv-2502.08047-b31b1b.svg?logo=arXiv' alt='Paper PDF'></a>
 <a href='https://showlab.github.io/GUI-Thinker'><img src='https://img.shields.io/badge/Project_Page-WorldGUI-green' alt='Project Page'></a>
-<a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
- </a>
+<a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'></a>
+
+[![download](https://img.shields.io/github/downloads/showlab/GUI-Thinker/total.svg)](https://github.com/showlab/GUI-Thinker/releases)
 </div>
 
 
 <details>
-<summary style="font-size:18px">✨ What's new in GUI-Thinker?</summary>
+<summary style="font-size:22px">✨ What's new in GUI-Thinker?</summary>
 
 <!-- ## ✨ What's new in GUI-Thinker? -->
 
@@ -30,7 +34,7 @@
 
 - Actor-Critic (Post-Action Evaluation): Review the task completion status and apply necessary corrections.
 
-
+### Technique Details
 
 <p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
@@ -46,6 +50,9 @@
 <p align="center" style="margin:0"><img src="./assets/actorcritic_flow.png" alt="agent" style="width: 60%" /></p>
 
 <p align="center" style="margin-top:-0.5em">Actor-Critic module.</p>
+
+
+### Comparing with SOTA Desktop GUI Agent
 
 <p align="center" style="margin:0"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
 
@@ -80,6 +87,7 @@ Our codebases includes:
 - [x] **Actor-Critic:** Checks task completion status by comparing before and after screenshots and uses an iterative action correction algorithm to gradually verify and correct actions.
 - [x] **Input with Instructional Video:** Supports the execution with instructional video.
 - [x] **Input without Instructional Video:** Supports the direct execution with user query.
+- [x] **Frontend-backend communication system:** Supports seperate the frontend and backend for flexible deploying the locally running model and user interfaces.
 
 
 See our [paper](https://arxiv.org/abs/2502.08047) for detail. Our GUI-Thinker is along with a newly curted Desktop GUI benchmark WorldGUI.

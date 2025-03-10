@@ -9,7 +9,7 @@ from agent.utils.log_utils import state_updater
 from agent.config import basic_config 
 
 
-class AutoPC:
+class AutoPCLight:
     def __init__(
         self, 
         software_name=None, 
@@ -23,6 +23,7 @@ class AutoPC:
         self.step = 0
         self.history = []
         self.current_task = None
+        self.reset_state()
 
         self.gui_parser_url = basic_config['gui_parser']['url']
         self.step_check_url = basic_config['step_check']['url']
@@ -146,26 +147,18 @@ class AutoPC:
     def run_step(
         self,
         state,
-        query,
         code,
         current_task,
-        meta_data, 
         last_screenshot_path,
         screenshot_path,
         software_name, 
         if_screenshot=True,
     ):
-
-        # # Observe the screenshot
-        # parsed_screenshot = self.run_gui_parser(
-        #     software_name, 
-        #     screenshot_path, 
-        #     meta_data,
-        # )
         
         if state == '<Continue>':
             stepcheck_decision, current_task, history = self.run_step_check(
                 current_task=current_task, 
+                parsed_screenshot=None,
                 screenshot_path=screenshot_path,
                 stepcheck_decision='',
                 history=self.history,
@@ -177,20 +170,22 @@ class AutoPC:
                 state = '<Next>'
 
         if state == '<Continue>': #
-            # Actor: Continue means nothing happen do actorcritic
+            # Actor
             code, current_task, history = self.run_actor(
                 current_task=current_task,
+                parsed_screenshot=None,
                 screenshot_path=screenshot_path,
                 history=self.history,
                 software_name=software_name,
-                if_screenshot=False,
+                if_screenshot=if_screenshot,
             )
 
         if state == '<Critic>':
-            # Actor-Critic:
+            # Actor-Critic
             critic_output = self.run_actorcritic(
                 current_task=current_task,
                 current_action=code, 
+                parsed_screenshot=None,
                 screenshot_path=[last_screenshot_path, screenshot_path],
                 history=self.history,
                 software_name=software_name,
@@ -253,3 +248,45 @@ class AutoPC:
                 }
             )
         pickle.dump(self.history, open(f"{self.cache_folder}/history.pkl", "wb"))
+
+    def reset(self):
+        self.current_task = None
+        self.step = 0
+        self.history = []
+        self.reset_state()
+
+    def reset_state(self):
+        self.current_state = {
+            "in_progress": False,
+            "plan": "",
+            "current_step": -1,
+            "current_progress": None,
+            "current_task": None,
+            "code": None,
+        }
+
+    def update_state(self, updates):
+        for key, value in updates.items():
+            if key in self.current_state:
+                self.current_state[key] = value
+                if key == "current_progress":
+                    print(f"Current progress: {value}")
+
+    def get_state(self, key=None):
+        return_keys = [
+            "in_progress",
+            "plan",
+            "current_step",
+            "current_progress",
+            "code",
+        ]
+        if key:
+            return self.current_state.get(key, None)
+        else:
+            return {k: v for k, v in self.current_state.items() if k in return_keys}
+
+    def generate_task_id(self):
+        # Time-based UUID
+        timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        rand_str = "".join(random.choices("abcdefghijklmnopqrstuvwxyz0123456789", k=5))
+        self.task_id = f"{timestamp}_{rand_str}"

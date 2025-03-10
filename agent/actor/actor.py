@@ -47,6 +47,7 @@ Invoke command: lmm_actor(query, visual[i])
             screenshot_path: str.
             history: A list tracking the history of executed tasks and interactions.
             software_name: The name of the software being interacted with.
+            if_screenshot: bool.
             **kwargs: Additional keyword arguments.
 
         Returns:
@@ -54,7 +55,7 @@ Invoke command: lmm_actor(query, visual[i])
         """
 
         code = self.query_to_action(
-            gui=parsed_screenshot, 
+            parsed_screenshot=parsed_screenshot, 
             history=history,
             current_task=current_task,
             screenshot_path=screenshot_path,
@@ -66,7 +67,7 @@ Invoke command: lmm_actor(query, visual[i])
 
     def query_to_action(
         self, 
-        gui, 
+        parsed_screenshot, 
         history, 
         current_task, 
         screenshot_path,
@@ -74,11 +75,16 @@ Invoke command: lmm_actor(query, visual[i])
         if_screenshot
     ):
 
-        """Translate query to interaction."""
+        """Translate query to executed code."""
         # prepare the information for constructing the prompt
-        # GUI Info
-        compressed_gui = self.compress_and_format_gui(gui)
-        
+
+
+        if parsed_screenshot is not None:
+            # GUI Info
+            compressed_gui = self.compress_and_format_gui(parsed_screenshot)
+        else:
+            compressed_gui = ""
+
         # Task Info
         main_goal, finished_tasks, current_task_text, next_task = self.get_task_details(current_task, history)
         
@@ -90,7 +96,7 @@ Invoke command: lmm_actor(query, visual[i])
 
         # Run lmm to get code
         prompt = self.construct_prompt(
-            gui=compressed_gui, 
+            gui_info=compressed_gui, 
             main_goal=main_goal, 
             finished_tasks=finished_tasks, # This is for provide some context for the current task
             current_task=current_task_text, 
@@ -130,7 +136,7 @@ Invoke command: lmm_actor(query, visual[i])
 
     def construct_prompt(
         self, 
-        gui, 
+        gui_info, 
         main_goal, 
         finished_tasks, 
         current_task,
@@ -142,9 +148,10 @@ Invoke command: lmm_actor(query, visual[i])
 
         """Construct the detailed prompt for the LMM based on provided parameters."""
         visual_prompt = "" if screenshot_path is None else "screenshot image provided and"
+
         text_prompt =  f'''Please, based on {visual_prompt} the parsed GUI elements from the provided screenshot below, use pyautogui and the following API to control the computer's mouse and keyboard to complete the specified Current Task.
 Parsed GUI Screenshot Info: [Note that: element format is "name [its position]", separate with comma]
-{gui}
+{gui_info}
 
 Information about Task:
 {main_goal}
