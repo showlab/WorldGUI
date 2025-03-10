@@ -19,18 +19,10 @@
 <!-- Welcome to GUI-Thinker! GUI-Thinker is a basic yet comprehensive GUI agent with self-reflection, deployable **without requiring Docker or a virtual machine**. It is included in the paper [WorldGUI](https://showlab.github.io/GUI-Thinker/).🌐 -->
 
 
-<!-- ## ✨ Key Features
-- Easy Setup: Quick and straightforward installation steps to get you started with desktop GUI agent.
-- Comprehensive Documentation: Detailed guides and usage examples to help you understand and leverage the full capabilities of the project.
-- Community Driven: We welcome contributions, feedback, and ideas. Feel free to open issues or submit pull requests if you have suggestions for improvement.
-- Regular Updates: Our project is actively maintained, with new features and bug fixes released regularly. -->
+<details>
+<summary style="font-size:18px">✨ What's new in GUI-Thinker?</summary>
 
-
-
-<!-- <details> -->
-<!-- <summary style="font-size:18px">What is the GUI-Thinker?</summary> -->
-
-## ✨ What's new in GUI-Thinker?
+<!-- ## ✨ What's new in GUI-Thinker? -->
 
 **GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
@@ -50,7 +42,15 @@
 
 <p align="center">Figure 2: Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
 
-<!-- </details> -->
+</details>
+
+
+## ✨Key Features
+
+- 🏆 **High Performance**: Our GUI-Thinker surpasses Cluade-3.5 Computer Use by 14.9% on our WorldGUI Benchmark.
+- 🌐 **Universal LMM Support**: Seamlessly integrates with **A Wide Range** of LMMs (e.g., OpenAI, Anthropic, Gemini)
+- 🔀 **Flexible Interaction**: Supports both **intructional video input** and **non-instructional video input**.
+- 🚀 **Easy Deployment**:  Get started instantly with a simple `.\shells\start_server.bat` command and `python test_guithinker_custom.py` without the need of Docker or Virtual Machine.
 
 ## 📢 Update
 
