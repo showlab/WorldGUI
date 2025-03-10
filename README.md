@@ -34,18 +34,18 @@
 
 <p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
-<p align="center">Overall framework of GUI-Thinker.</p>
+<p align="center" style="margin-top:-0.5em">Overall framework of GUI-Thinker.</p>
 
 <p align="center" style="margin:0"><img src="./assets/plannercritic_flow.png" alt="agent" style="width: 60%" /></p>
-<p align="center">State-Aware Planner and Planner-Critic modules.</p>
+<p align="center" style="margin-top:-0.5em">State-Aware Planner and Planner-Critic modules.</p>
 
 <p align="center" style="margin:0"><img src="./assets/stepcheck_flow.png" alt="agent" style="width: 60%" /></p>
 
-<p align="center">Step-Check module.</p>
+<p align="center" style="margin-top:-0.5em" >Step-Check module.</p>
 
 <p align="center" style="margin:0"><img src="./assets/actorcritic_flow.png" alt="agent" style="width: 60%" /></p>
 
-<p align="center">Actor-Critic module.</p>
+<p align="center" style="margin-top:-0.5em">Actor-Critic module.</p>
 
 <p align="center" style="margin:0"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
 
