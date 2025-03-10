@@ -23,8 +23,6 @@ class AutoPC:
         self.step = 0
         self.history = []
         self.current_task = None
-        self.reset_state()
-        self.if_critic = False
 
         self.gui_parser_url = basic_config['gui_parser']['url']
         self.step_check_url = basic_config['step_check']['url']
@@ -158,17 +156,16 @@ class AutoPC:
         if_screenshot=True,
     ):
 
-        # Observe the screenshot
-        parsed_screenshot = self.run_gui_parser(
-            software_name, 
-            screenshot_path, 
-            meta_data,
-        )
+        # # Observe the screenshot
+        # parsed_screenshot = self.run_gui_parser(
+        #     software_name, 
+        #     screenshot_path, 
+        #     meta_data,
+        # )
         
         if state == '<Continue>':
             stepcheck_decision, current_task, history = self.run_step_check(
                 current_task=current_task, 
-                parsed_screenshot=parsed_screenshot, 
                 screenshot_path=screenshot_path,
                 stepcheck_decision='',
                 history=self.history,
@@ -183,7 +180,6 @@ class AutoPC:
             # Actor: Continue means nothing happen do actorcritic
             code, current_task, history = self.run_actor(
                 current_task=current_task,
-                parsed_screenshot=parsed_screenshot, 
                 screenshot_path=screenshot_path,
                 history=self.history,
                 software_name=software_name,
@@ -194,8 +190,7 @@ class AutoPC:
             # Actor-Critic:
             critic_output = self.run_actorcritic(
                 current_task=current_task,
-                current_action=code,
-                parsed_screenshot=parsed_screenshot, 
+                current_action=code, 
                 screenshot_path=[last_screenshot_path, screenshot_path],
                 history=self.history,
                 software_name=software_name,
@@ -208,7 +203,6 @@ class AutoPC:
                     history=self.history,
                     code=code,
                     state=state,
-                    gui=parsed_screenshot,
                     current_task=current_task,
                     screenshot_path=screenshot_path
                 )
@@ -220,7 +214,6 @@ class AutoPC:
             history=self.history,
             code=code,
             state=state,
-            gui=parsed_screenshot,
             current_task=current_task,
             screenshot_path=screenshot_path
         )
@@ -234,9 +227,9 @@ class AutoPC:
         history,
         code,
         state,
-        gui,
         current_task,
-        screenshot_path
+        screenshot_path,
+        gui=None
     ):
 
         if state in ["<Critic>"]:

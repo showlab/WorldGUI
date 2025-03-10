@@ -17,9 +17,6 @@
 </div>
 
 
-
-
-
 <details>
 <summary style="font-size:18px">✨ What's new in GUI-Thinker?</summary>
 
@@ -37,11 +34,26 @@
 
 <p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
-<p align="center">Figure 1: Overview of GUI-Thinker.</p>
+<p align="center">Overall framework of GUI-Thinker.</p>
+
+<p align="center" style="margin:0"><img src="./assets/plannercritic_flow.png" alt="agent" style="width: 60%" /></p>
+<p align="center">State-Aware Planner and Planner-Critic modules.</p>
+
+<p align="center" style="margin:0"><img src="./assets/stepcheck_flow.png" alt="agent" style="width: 80%" /></p>
+
+<p align="center">Step-Check module.</p>
+
+<p align="center" style="margin:0"><img src="./assets/actorcritic_flow.png" alt="agent" style="width: 80%" /></p>
+
+<p align="center">Actor-Critic module.</p>
+
+<p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
+
+<p align="center">Overall framework of GUI-Thinker.</p>
 
 <p align="center" style="margin:0"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
 
-<p align="center">Figure 2: Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
+<p align="center">Comparison of various agents on the WorldGUI Benchmark (meta task).</p>
 
 </details>
 
