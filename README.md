@@ -3,10 +3,9 @@
 <div align="center">
   <img style="width: 500px" src="./assets/guithinker-logo.png">
   <h1 align="center"> A Basic yet Comprehensive GUI Agent Developed with Self-Reflection</h1>
+  <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 80%" /></p>
 </div>
 
-<!-- <h4 align="center"> Welcome to GUI-Thinker! This repo includes both the proposed GUI Benchmark <a href='https://showlab.github.io/GUI-Thinker'>WorldGUI</a> and a new GUI agent <b>GUI-Thinker</b> with highly adaptive ability facing changing GUI Env.
-</h4> -->
 
 <h4 align="center">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
@@ -16,6 +15,9 @@
 <a href='https://github.com/showlab/Awesome-GUI-Agent'><img src='https://img.shields.io/badge/Github-AwesomeGUI-orange' alt='AwesomeGUI'>
  </a>
 </div>
+
+
+
 
 
 <details>
