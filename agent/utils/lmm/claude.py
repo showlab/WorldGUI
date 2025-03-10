@@ -3,7 +3,6 @@ from agent.utils.lmm.lmm_utils import encode_image, is_image_path
 
 import anthropic
 
-
 def run_claude_interleaved(prompt, llm, max_tokens=1000, temperature=0):
 
     client = anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
