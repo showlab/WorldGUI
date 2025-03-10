@@ -3,7 +3,7 @@
 <div align="center">
   <img style="width: 500px" src="./assets/guithinker-logo.png">
   <h1 align="center"> A Basic yet Comprehensive GUI Agent Developed with Self-Reflection</h1>
-  <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 80%" /></p>
+  <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 </div>
 
 
