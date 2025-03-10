@@ -22,7 +22,7 @@ class AutoPC:
         # self.action_countdown = 100
         
         self.task_id = f"{software_name}_{project_id}"
-        self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "autopc", self.task_id)
+        self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "AutoPC", self.task_id)
         os.makedirs(self.cache_folder, exist_ok=True)
         print(f"Cache folder: {self.cache_folder}")
         

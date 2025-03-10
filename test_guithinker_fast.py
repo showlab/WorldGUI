@@ -8,7 +8,7 @@ import argparse
 
 import subprocess
 
-from agent.autopc_light import AutoPCLight
+from agent.autopc_fast import AutoPCLight
 from agent.utils.gui_capture import get_screenshot, focus_software
 
 from agent.config import basic_config
@@ -44,7 +44,7 @@ def main():
     last_screenshot_path = ""
     critic_count = 0
 
-    autopc = AutoPCLight(software_name=software_name, project_id=projectID)
+    autopc = AutoPCFast(software_name=software_name, project_id=projectID)
 
     focus_software(software_name)
     _, screenshot_path = get_screenshot(software_name)

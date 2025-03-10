@@ -9,14 +9,14 @@ from agent.utils.log_utils import state_updater
 from agent.config import basic_config 
 
 
-class AutoPCLight:
+class AutoPCFast:
     def __init__(
         self, 
         software_name=None, 
         project_id=None
     ):        
         self.task_id = f"{software_name}_{project_id}"
-        self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "autopc", self.task_id)
+        self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "AutoPCFast", self.task_id)
         os.makedirs(self.cache_folder, exist_ok=True)
         print(f"Cache folder: {self.cache_folder}")
         
