@@ -2,9 +2,6 @@
 
 <div align="center">
   <img style="width: 100%" src="./assets/logo.png">
-  <!-- <h1 align="left">
-  A Basic yet Comprehensive GUI Agent Developed with Self-Reflection 🤖
-  </h1> -->
 </div>  
 
 <h5 align="center"> 
