@@ -1,0 +1,5 @@
+{
+    "vscode": [
+        "Do add moveTo({x}, {y}, duration=1) before each click({x}, {y})."
+    ]
+}

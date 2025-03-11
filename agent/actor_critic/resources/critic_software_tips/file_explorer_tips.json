@@ -1,0 +1,6 @@
+{
+    "file explorer": [
+        "Determine the task completion status on based on current screenshot and current action. If the current action is already done, do not do it again.",
+        "When use drag operation, please use moveTo({start_x}, {start_y})\nmouseDown()\nmoveTo({end_x}, {end_y}, duration={duration})\nmouseUp()"
+    ]
+}

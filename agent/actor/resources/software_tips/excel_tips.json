@@ -1,0 +1,8 @@
+{
+    "excel": [
+        "When Type 'text...' into the cell, do not select the any cell. Directly output the action.",
+        "When you see the popup window, please press 'Enter' instead of click 'OK' button.",
+        "When selecting cells, please pres shift between two click operations.",
+        "The first row like A1, B1 is under the header A, B, C, D..."
+    ]
+}

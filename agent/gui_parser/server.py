@@ -14,8 +14,6 @@ import logging
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-os.environ['HTTP_PROXY'] = 'http://127.0.0.1:7980'
-os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7980'
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.abspath(os.path.join(os.path.dirname(__file__), '../config', 'googleocr-config.json'))
 openai.api_key = os.getenv('OPENAI_KEY')

@@ -1,0 +1,9 @@
+{
+    "powerpoint": [
+        "When typing font size: must press ctrl-A before typing.",
+        "When selecting text, do not choose the text in the left thumbnails.",
+        "When selecting text, click one the horizontal and vertical middle area of the text and then use ctrl-A to select all the text. Do not use shift and redundant click.",
+        "If you want select the text within the main pane, the coordinate value is large.",
+        "When use drag operation, please use moveTo({start_x}, {start_y})\nmouseDown()\nmoveTo({end_x}, {end_y}, duration={duration})\nmouseUp()"
+        ]
+}

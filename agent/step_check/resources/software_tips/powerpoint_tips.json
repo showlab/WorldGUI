@@ -1,0 +1,12 @@
+{
+    "powerpoint": [
+        "When selecting a slide, focus on the Thumbnails on the left pane of the given screenshot and ensure the target slide is selected.",
+        "When determining whether the slide is selected, carefully refer to the provided screenshot.",
+        "The slide is selected, the border color is red",
+        "When selecting the text, there maybe two candicates from left thumbnail and main pane, please do omit the text in the left thumbnail.",
+        "The text being visible cannot to determine the text is selected.",
+        "When selecting the text, do not see the text in the left thumbnail.",
+        "Do not click the arrow in the Transitions tab to view all effects when the effecsr already can be seen in the screenshot.",
+        "The button is visible cannot to determine the button is clicked."
+    ]
+}

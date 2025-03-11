@@ -307,13 +307,13 @@ Note:
 
             init_plans = self.getrefinedplans(software, query, video_name, video_path, raw_steps, screenshot_path)
 
-            tips = self.get_software_tips(self.software_tips, software.lower())
-            plans = self.plancritic(software, video_name, query, init_plans, gui_info, raw_steps, tips)
+            tips = self.get_software_tips(self.software_tips, software.replace(' ', '').lower())
+            plans = self.plancritic(software, video_name, query, init_plans, gui_info, screenshot_path, raw_steps, tips)
         else:
 
             init_plans = self.getplans_novideo(software, query, screenshot_path)
 
-            tips = self.get_software_tips(self.software_tips, software.lower())
+            tips = self.get_software_tips(self.software_tips, software.replace(' ', '').lower())
 
             plans = self.plancritic(software, "", query, init_plans, gui_info, screenshot_path, "", tips)
 

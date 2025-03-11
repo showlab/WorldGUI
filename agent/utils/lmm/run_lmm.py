@@ -1,12 +1,9 @@
 import base64
 import logging
-import os
+
 from agent.utils.lmm.oai import run_gpt4o_interleaved
 from agent.utils.lmm.gemini import run_gemini_interleaved
 from agent.utils.lmm.claude import run_claude_interleaved
-
-os.environ['HTTP_PROXY'] = 'http://127.0.0.1:7980'
-os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7980'
 
 def run_lmm(prompt, lmm="gpt-4o-2024-08-06", max_tokens=1024, temperature=0, stop=None):
     log_prompt(prompt)

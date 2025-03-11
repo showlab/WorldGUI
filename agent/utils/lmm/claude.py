@@ -5,7 +5,7 @@ import anthropic
 
 def run_claude_interleaved(prompt, llm, max_tokens=1000, temperature=0):
 
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    client = anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
 
     image_media_type = "image/png"
 
