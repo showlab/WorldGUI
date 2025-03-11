@@ -70,7 +70,7 @@
 - 🚀 **Easy Deployment**:  Get started instantly with a simple `.\shells\start_server.bat` command and `python test_guithinker_custom.py` without the need of Docker or Virtual Machine.
 
 ## 📢 Update
-
+* [2025.03.11] ⚡ We release a fast version of GUI-Thinker equipped with the base model Claude-3.5-Sonnet and Claude-3.7-Sonnet.
 * [2025.03.08] We made a demo for showing the GUI-Thinker.
 * [2025.03.05] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
 * [2025.03.05] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker). GUI-Thinker now supports various base LMMs through API calling, including GPT-4o, Gemini-2.0, and Claude-3.5-Sonnet. Local model support will be available soon.
@@ -97,13 +97,13 @@ See our [paper](https://arxiv.org/abs/2502.08047) for detail. Our GUI-Thinker is
 
 GUI-Thinker is continuously evolving! Here's what's coming:
 
-- 🖥️ **Lightweight Version**: Supporting a lightweight version specially design for Claude-3.5-Sonnet Computer Use without the GUI parser.
+- [x] **Lightweight Version**: Supporting a lightweight version specially design for Claude-3.5-Sonnet Computer Use without the GUI parser.
 
-- 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
+- [] 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
 
-- 📊 **Locally-running Models**: Supporting the ShowUI or UI-TARS as the Actor in our framework.
+- [] 📊 **Locally-running Models**: Supporting the ShowUI or UI-TARS as the Actor in our framework.
 
-- 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
+- [] 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
 
 Feel free to open issues or submit pull requests if you have suggestions. Our project is actively maintained, with new features and bug fixes released regularly. 🚀
 
