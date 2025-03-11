@@ -9,7 +9,6 @@ import argparse
 import subprocess
 
 from agent.autopc import AutoPC
-from agent.utils.execute_utils import post_process_gui_code
 from agent.utils.gui_capture import get_screenshot, focus_software
 from agent.gui_parser.sender import send_gui_parser_request
 from agent.actor.utils import format_gui, compress_gui
@@ -68,7 +67,7 @@ def main():
     last_screenshot_path = ""
     critic_count = 0
 
-    autopc = AutoPC(user_id=software_name, project_id=projectID)
+    autopc = AutoPC(software_name=software_name, project_id=projectID)
 
     # Focus current software and get the initial screenshot
     focus_software(software_name)
@@ -104,7 +103,6 @@ def main():
         print("===Current task===", "Index:",  idx, state)
         print(autopc.current_task.name.strip())
         code, state, current_task = autopc.run_step(state,
-                                                    query,
                                                     code,
                                                     autopc.current_task, 
                                                     meta_data, 
@@ -116,8 +114,7 @@ def main():
         ## execute the action code
         if code != "":
             focus_software(software_name)
-            exe_code = post_process_gui_code(code, software_name)
-            exec(exe_code)
+            exec(code)
             last_screenshot_path = screenshot_path
         
         if state == '<Continue>':

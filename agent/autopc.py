@@ -15,14 +15,14 @@ from agent.config import basic_config
 class AutoPC:
     def __init__(
         self, 
-        user_id=None, 
+        software_name=None, 
         project_id=None
     ):
         self.maximum_step = 50
         # self.action_countdown = 100
         
-        self.task_id = f"{user_id}_{project_id}"
-        self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "autopc", self.task_id)
+        self.task_id = f"{software_name}_{project_id}"
+        self.cache_folder = os.path.join(basic_config['os_agent_settings']['cache_dir'], "AutoPC", self.task_id)
         os.makedirs(self.cache_folder, exist_ok=True)
         print(f"Cache folder: {self.cache_folder}")
         
@@ -30,7 +30,6 @@ class AutoPC:
         self.history = []  # [{task: ,code, ocr(json), screenshot_path, gui,  }]
         self.current_task = None
         self.reset_state()
-        self.if_critic = False
 
         self.gui_parser_url = basic_config['gui_parser']['url']
         self.step_check_url = basic_config['step_check']['url']
@@ -168,7 +167,6 @@ class AutoPC:
     def run_step(
         self,
         state,
-        query,
         code,
         current_task,
         meta_data, 

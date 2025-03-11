@@ -42,7 +42,7 @@ def handle_command():
     code, state = actor_critic(
         current_task=decode_task(data.get('current_task')),
         current_action=data.get('current_action'),
-        gui=data.get('parsed_screenshot', {}),
+        parsed_screenshot=data.get('parsed_screenshot', None),
         screenshot_path=screenshot_path,
         history=data.get('history'),
         software_name=data.get('software_name')

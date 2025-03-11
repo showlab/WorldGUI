@@ -94,14 +94,17 @@ class StepCheck:
             elif '<Finished>' in critic_feedback:
                 stepcheck_decision = '<Finished>'
             elif '#Cannot confirm' in critic_feedback and iter_idx < 2:
-
-                compress_gui = self.compress_and_format_gui(parsed_screenshot)
-                new_screenshot_path = run_locateregion(
-                    LMM=self.lmm,
-                    software_name=software_name,
-                    current_task=current_task_text,
-                    gui_info=compress_gui,
-                    screenshot_path=screenshot_path)
+                
+                if parsed_screenshot:
+                    compress_gui = self.compress_and_format_gui(parsed_screenshot)
+                    new_screenshot_path = run_locateregion(
+                        LMM=self.lmm,
+                        software_name=software_name,
+                        current_task=current_task_text,
+                        gui_info=compress_gui,
+                        screenshot_path=screenshot_path)
+                else: # for claude computer use that has the actor ability
+                    pass
 
                 stepcheck_decision = '<Retry>' # current do nothing
             elif '<Pass>' in critic_feedback:

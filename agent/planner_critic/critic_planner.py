@@ -39,7 +39,7 @@ class CriticPlanner():
         return output
 
     def extract_plan(self, input_string):
-        # Regular expression to extract content from '```python ... ```'
+        # Regular expression to extract content from '```plan ... ```'
         pattern = r'```plan(.*?)```'
         # Extract content
         matches = re.findall(pattern, input_string, re.DOTALL)  # re.DOTALL allows '.' to match newlines as well
@@ -169,8 +169,7 @@ Note that:
 5) The action types in Subtask should be in [Click/DoubleClick/RightClick, Scroll, Drag, Type, Write, Press] 
 6) Avoid generate navigation or location actions, as they don't align with any specified step above; directly click on the desired link instead. 
 
-Refined steps:'''  # User Screenshot Summary: {gui_summary}
-
+Refined steps:'''
 
         if len(query) > 200:
             query = query[:200]
@@ -206,7 +205,7 @@ Note that:
 5) The action types in Subtask should be in [Click/DoubleClick/RightClick, Scroll, Drag, Type, Write, Press] 
 6) Avoid generate navigation or location actions, as they don't align with any specified step above; directly click on the desired link instead. 
 
-Refined steps:'''  # User Screenshot Summary: {gui_summary}
+Refined steps:'''
 
 
         if len(query) > 200:
@@ -228,12 +227,15 @@ Refined steps:'''  # User Screenshot Summary: {gui_summary}
 
         return compressed_gui
 
-    def plancritic(self, software, video_name, query, plans, compressed_gui, raw_steps, tips):
+    def plancritic(self, software, video_name, query, plans, compressed_gui, screenshot_path, raw_steps, tips):
+
+        visual_prompt = "screenshot image" if compressed_gui is None else "screenshot image and the parsed GUI screenshot"
+
         text_prompt =  f'''You are very smart, I would like your assistance for Desktop GUI automation.
 
-I will provide the software name, key steps from the instructional video, a screenshot of the current environment state, the user query, and the plans.
+I will provide the software name, key steps from the instructional video, the user query, and the initial plans.
 
-You need to verify whether the provided plans can fulfill the user query. If not, please revise the plans. 
+You need to verify whether the provided initial plans can fulfill the user query. If not, please revise the plans. 
 
 Software name: {software}
 Software tips: {tips}
@@ -244,7 +246,7 @@ User Query: {query}
 
 Plans ready for evaluation: {plans}
 
-I will provide the parsed GUI screenshot of current Desktop GUI state about {software}. We use the parase GUI elements to represent current GUI screenshot.
+I will provide the {visual_prompt} to represent the current Desktop GUI state about {software}.
 Parsed GUI Screenshot Info: [Note that: element format is "name [its position]", separate with comma]
 {compressed_gui}
 
@@ -281,7 +283,7 @@ Note:
 # Remember to reason in comment if needed.
 '''
 
-        critic_results = run_lmm([text_prompt], lmm=self.lmm_critic, max_tokens=1000, temperature=0)
+        critic_results = run_lmm([text_prompt, screenshot_path], lmm=self.lmm_critic, max_tokens=1000, temperature=0)
 
         corrected_plans = self.parse_correctedplans(critic_results)
 
@@ -313,7 +315,7 @@ Note:
 
             tips = self.get_software_tips(self.software_tips, software.lower())
 
-            plans = self.plancritic(software, "", query, init_plans, gui_info, "", tips)
+            plans = self.plancritic(software, "", query, init_plans, gui_info, screenshot_path, "", tips)
 
         return plans
         

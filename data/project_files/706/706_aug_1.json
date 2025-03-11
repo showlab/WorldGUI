@@ -1,0 +1,1 @@
+"from pyautogui import click, write, moveTo, press, dragTo, mouseDown, mouseUp, hotkey\nfrom time import sleep\nhotkey('win', 'i')\nsleep(1)\nmoveTo(141, 196, 1)\nclick(141, 196)\nwrite('notification')"

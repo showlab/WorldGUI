@@ -28,6 +28,7 @@ os_agent_settings:
   cache_dir: "./backend_cache"
 
 # candidate models used in our GUI-Thinker
+# claude-3-7-sonnet-20250219
 # gpt-4o-2024-08-06
 # gemini-2.0-flash-exp
 # claude-3-5-sonnet-20241022

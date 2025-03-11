@@ -1,0 +1,1 @@
+"from pyautogui import click, write, moveTo, press, dragTo, mouseDown, mouseUp, hotkey\nfrom time import sleep\nhotkey('win', 'i')\nsleep(0.5)\nclick(140, 819)"
