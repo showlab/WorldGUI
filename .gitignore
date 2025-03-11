@@ -8,3 +8,5 @@
 **/test_results/
 yolov8n-oiv7.pt
 .DS_Store
+software_tips/
+critic_software_tips/
