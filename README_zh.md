@@ -1,20 +1,22 @@
 
 
 <div align="center">
-  <img style="width: 500px" src="./assets/guithinker-logo.png">
-  <h1 align="center">批判性思维驱动的全自动桌面 GUI 助手</h1>
+  <img src="./assets/logo.png" style="width: 100%">
+  <!-- <h1>基于自反思机制的全能高效GUI智能体 🤖</h1> -->
 </div>
 
 <h5 align="center"> 
 欢迎来到 GUI-Thinker！如果你觉得本项目有帮助，欢迎点个 Star ⭐ 支持我们一下！
 </h5>
 
-<div align="center" style="margin-bottom: 0">
+<h5 align="center"> 
+
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
 [![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-</div>
+
+</h5>
 
 ## <img src="/Users/kaiming/Workspace/Research/GUI-Thinker/assets/clickicon.png" alt="点击" style="height:25px; vertical-align:middle; filter: invert(1) brightness(2);"> 项目概览
 
