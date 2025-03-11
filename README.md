@@ -3,12 +3,12 @@
 <div align="center">
   <img style="width: 100%" src="./assets/logo.png">
   <h1 align="center">
-  A Basic yet Comprehensive GUI Agent Developed with Self-Reflection
+  A Basic yet Comprehensive GUI Agent Developed with Self-Reflection 🤖
   </h1>
 </div>  
 
 
-<p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
+
 
 <h4 align="center">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
@@ -23,9 +23,11 @@
 
 
 <details>
-<summary style="font-size:22px">✨ What's new in GUI-Thinker?</summary>
+<summary style="font-size:2em">✨ What's new in GUI-Thinker?</summary>
 
 <!-- ## ✨ What's new in GUI-Thinker? -->
+
+<p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 **GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
