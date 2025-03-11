@@ -7,26 +7,24 @@
   </h1>
 </div>  
 
+Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.
 
 
-
-<h4 align="left">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
-
-<h5 align="left">
-
-<!-- [![GitHub stars](https://img.shields.io/github/stars/showlab/GUI-Thinker?style=social)](https://github.com/gregpr07/browser-use/stargazers) -->
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
 [![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-</h5>
 
-<!-- ## Overview -->
+✨**GUI-Thinker** is a new GUI agent framework that offers highly adaptive self-reflection capabilities in dynamic GUI envs.
+
+💡**No Docker or Virtual Machine** for deployment.
+
+🌐Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker). 
+
+
 
 <details>
-<summary>✨ What's new in GUI-Thinker?</summary>
-
-<!-- ## ✨ What's new in GUI-Thinker? -->
+<summary>What's new in GUI-Thinker?</summary>
 
 <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
