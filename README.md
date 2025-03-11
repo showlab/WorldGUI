@@ -1,25 +1,32 @@
 
 
-<div align="left">
+<div align="center">
   <img style="width: 100%" src="./assets/logo.png">
   <!-- <h1 align="left">
   A Basic yet Comprehensive GUI Agent Developed with Self-Reflection 🤖
   </h1> -->
 </div>  
 
+<h5 align="center"> 
 Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.
+</h5>
 
+<h5 align="center"> 
 
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
 [![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-✨**GUI-Thinker** has highly adaptive self-reflection capabilities in dynamic GUI envs.
+</h5>
 
-💡**No Docker or Virtual Machine** for deployment.
+## <img src="./assets/clickicon.png" alt="click" style="height:25px; vertical-align:middle; filter: invert(1) brightness(2);"> Overview
 
-🌐Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker). 
+**GUI-Thinker** has highly adaptive self-reflection capabilities in dynamic GUI envs.
+
+**No Docker or Virtual Machine** for deployment.
+
+Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker).🌐
 
 
 
