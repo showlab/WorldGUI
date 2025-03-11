@@ -29,7 +29,7 @@ Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for
 Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker).🌐
 
 
-
+## Introduction
 <details>
 <summary>What's new in GUI-Thinker?</summary>
 
@@ -104,7 +104,7 @@ See our [paper](https://arxiv.org/abs/2502.08047) for detail. Our GUI-Thinker is
 
 GUI-Thinker is continuously evolving! Here's what's coming:
 
-- [x] **Fast Version**: Supporting a fast version specially equipped with anthropic Computer Use without the GUI parser.
+- [x] ⚡ **Fast Version**: Supporting a fast version specially equipped with anthropic Computer Use without the GUI parser.
 
 - [ ] 👓 **OOTB Usage**: Supporting a user-frendly interface based on Gradio.
 
