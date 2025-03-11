@@ -1,8 +1,8 @@
 
 
-<div align="center">
+<div align="left">
   <img style="width: 100%" src="./assets/logo.png">
-  <h1 align="center">
+  <h1 align="left">
   A Basic yet Comprehensive GUI Agent Developed with Self-Reflection 🤖
   </h1>
 </div>  
@@ -10,9 +10,9 @@
 
 
 
-<h4 align="center">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
+<h4 align="left">Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.</h4>
 
-<h5 align="center">
+<h5 align="left">
 
 <!-- [![GitHub stars](https://img.shields.io/github/stars/showlab/GUI-Thinker?style=social)](https://github.com/gregpr07/browser-use/stargazers) -->
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
@@ -21,9 +21,10 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 </h5>
 
+<!-- ## Overview -->
 
 <details>
-<summary style="font-size:2em">✨ What's new in GUI-Thinker?</summary>
+<summary>✨ What's new in GUI-Thinker?</summary>
 
 <!-- ## ✨ What's new in GUI-Thinker? -->
 
