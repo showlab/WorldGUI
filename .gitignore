@@ -1,0 +1,11 @@
+**/__pycache__/
+*.pyc
+*.pyo
+.idea
+**/.cache/
+**/.log/
+**/backend_cache/
+**/test_results/
+yolov8n-oiv7.pt
+.DS_Store
+resources

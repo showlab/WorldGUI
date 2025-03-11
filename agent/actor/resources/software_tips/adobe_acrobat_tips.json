@@ -1,9 +1,0 @@
-{
-    "adobe acrobat": [
-        "Clicking on the text means select the text. To select the entire sentence, use click operation three times. For example, click(x,y)\nclick(x,y)\nclick(x,y)",
-        "When use drag operation, please use moveTo({start_x}, {start_y})\nmouseDown()\nmoveTo({end_x}, {end_y}, duration={duration})\nmouseUp()",
-        "Use moveTo(x,y,duration=1) before click(x,y) operation.",
-        "Use time.sleep(1) before moveTo operation.",
-        "When delete option is not shown in the GUI, please press 'delete' button in the keyboard."
-    ]
-}
