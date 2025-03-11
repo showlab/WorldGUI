@@ -1,5 +1,3 @@
-
-
 <div align="center">
   <img src="./assets/logo.png" style="width: 100%">
   <!-- <h1>基于自反思机制的全能高效GUI智能体 🤖</h1> -->
@@ -11,6 +9,8 @@
 
 <h5 align="center"> 
 
+[English](README.md) | 中文
+
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
 [![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
@@ -18,13 +18,13 @@
 
 </h5>
 
-## <img src="/Users/kaiming/Workspace/Research/GUI-Thinker/assets/clickicon.png" alt="点击" style="height:25px; vertical-align:middle; filter: invert(1) brightness(2);"> 项目概览
+## <img src="./assets/clickicon.png" alt="点击" style="height:25px; vertical-align:middle; filter: invert(1) brightness(2);"> 项目概览
 
 - **GUI-Thinker** 是一款具备**高自适应性**与**自我反思能力**的桌面 GUI 智能体，能够在动态的图形界面环境中完成多种操作。
 
 - **无需 Docker 或虚拟机**，即可快速部署和运行。
 
-- 点击了解我们所构建的[WorldGUI](https://showlab.github.io/GUI-Thinker) 研究项目。
+- 更多详情点击了解[WorldGUI](https://showlab.github.io/GUI-Thinker)。
 
 ## 项目介绍
 
