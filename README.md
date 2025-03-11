@@ -2,9 +2,9 @@
 
 <div align="left">
   <img style="width: 100%" src="./assets/logo.png">
-  <h1 align="left">
+  <!-- <h1 align="left">
   A Basic yet Comprehensive GUI Agent Developed with Self-Reflection 🤖
-  </h1>
+  </h1> -->
 </div>  
 
 Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.
@@ -15,7 +15,7 @@ Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-✨**GUI-Thinker** is a new GUI agent framework that offers highly adaptive self-reflection capabilities in dynamic GUI envs.
+✨**GUI-Thinker** has highly adaptive self-reflection capabilities in dynamic GUI envs.
 
 💡**No Docker or Virtual Machine** for deployment.
 
