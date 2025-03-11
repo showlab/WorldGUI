@@ -8,7 +8,7 @@ Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for
 
 <h5 align="center"> 
 
-English | [中](README_zh.md)
+English | [中文](README_zh.md)
 
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
 [![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
