@@ -1,5 +1,3 @@
-
-
 <div align="center">
   <img style="width: 100%" src="./assets/logo.png">
 </div>  
@@ -10,12 +8,16 @@ Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for
 
 <h5 align="center"> 
 
+English | [中](README_zh.md)
+
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
 [![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 </h5>
+
+
 
 ## <img src="./assets/clickicon.png" alt="click" style="height:25px; vertical-align:middle; filter: invert(1) brightness(2);"> Overview
 
