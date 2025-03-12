@@ -30,6 +30,7 @@ Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker
 
 User Query: Disable the 'Battery saver' Notifications
 GUI-Thinker:
+
 <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 ## Introduction

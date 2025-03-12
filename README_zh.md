@@ -28,6 +28,7 @@
 
 User Query: 关闭'Battery saver'通知
 GUI-Thinker:
+
 <p align="center"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 ## 项目介绍
