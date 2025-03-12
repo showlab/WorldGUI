@@ -27,6 +27,7 @@
 - 更多详情点击了解[WorldGUI](https://showlab.github.io/GUI-Thinker)。
 
 User Query: 关闭'Battery saver'通知
+
 GUI-Thinker:
 
 <p align="center"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
