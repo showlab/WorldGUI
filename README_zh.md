@@ -26,12 +26,14 @@
 
 - 更多详情点击了解[WorldGUI](https://showlab.github.io/GUI-Thinker)。
 
+User Query: 关闭'Battery saver'通知
+GUI-Thinker:
+<p align="center"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
+
 ## 项目介绍
 
 <details>
 <summary>GUI-Thinker 有哪些创新？</summary>
-
-<p align="center"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 GUI-Thinker 在 GUI 自动化领域引入了**自反思机制**，我们对 GUI 自动化进行了系统性的研究，并构建了如下工作流程，其中包含三个关键的自反思模块：
 

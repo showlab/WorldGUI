@@ -28,11 +28,13 @@ English | [中文](README_zh.md)
 Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker).🌐
 
 
+User Query: Disable the 'Battery saver' Notifications
+GUI-Thinker:
+<p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
+
 ## Introduction
 <details>
 <summary>What's new in GUI-Thinker?</summary>
-
-<p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 **GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
