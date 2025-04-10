@@ -63,7 +63,6 @@ GUI-Thinker:
 
 <p align="center" style="margin-top:-0.5em">Actor-Critic module.</p>
 
-
 ### Comparing with SOTA Desktop GUI Agent
 
 <p align="center" style="margin:0"><img src="./assets/com_barchart.png" alt="results" style="width: 80%" /></p>
@@ -171,3 +170,4 @@ If you find WorldGUI useful, please cite using this BibTeX:
 
 ## 🔔 Contact
 If you have any questions or suggestions, please don't hesitate to let us know. You can directly email [Henry Hengyuan Zhao](https://zhaohengyuan1.github.io/) at NUS using the email address hubylidayuan@gmail.com, or post an issue on this repository. We welcome contributions. Feel free to submit pull requests if you have suggestions for improvement.
+
