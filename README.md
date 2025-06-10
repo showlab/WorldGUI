@@ -1,9 +1,7 @@
-<div align="center">
-  <img style="width: 100%" src="./assets/logo.png">
-</div>  
+<h2 align="center">WorldGUI: An Interactive Benchmark for Desktop GUI Automation from Any Starting Point</h2>
 
 <h5 align="center"> 
-Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for encouragement.
+Welcome to WorldGUI! If you find this repo useful, please give a star ⭐ for encouragement.
 </h5>
 
 <h5 align="center"> 
@@ -11,9 +9,8 @@ Welcome to GUI-Thinker! If you find this repo useful, please give a star ⭐ for
 English | [中文](README_zh.md)
 
 [![arXiv](https://img.shields.io/badge/ArXiv-2502.08047-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2502.08047)
-[![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/GUI-Thinker)
+[![Project Page](https://img.shields.io/badge/Project_Page-WorldGUI-white?color=7289DA)](https://showlab.github.io/WorldGUI)
 [![Project Page](https://img.shields.io/badge/Github-AwesomeGUI-blue)](https://github.com/showlab/Awesome-GUI-Agent)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshowlab%2FGUI-Thinker&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 </h5>
 
@@ -21,24 +18,24 @@ English | [中文](README_zh.md)
 
 ## <img src="./assets/clickicon.png" alt="click" style="height:25px; vertical-align:middle; filter: invert(1) brightness(2);"> Overview
 
-**GUI-Thinker** has highly adaptive self-reflection capabilities in dynamic GUI envs.
+**WorldGUI-Agent** has highly adaptive self-reflection capabilities in dynamic GUI envs.
 
 **No Docker or Virtual Machine** for deployment.
 
-Visit our study WorldGUI in [project page](https://showlab.github.io/GUI-Thinker).🌐
+Visit our study WorldGUI in [project page](https://showlab.github.io/WorldGUI).🌐
 
 
 User Query: Disable the 'Battery saver' Notifications
 
-GUI-Thinker:
+WorldGUI-Agent:
 
 <p align="center" style="margin:0"><img src="./assets/sucessexample.jpg" alt="agent" style="width: 100%" /></p>
 
 ## Introduction
 <details>
-<summary>What's new in GUI-Thinker?</summary>
+<summary>What's new in WorldGUI-Agent?</summary>
 
-**GUI-Thinker** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
+**WorldGUI-Agent** is a newly developed GUI agent based on a self-reflection mechanism. We systematically investigate GUI automation and establish the following workflow, incorporating three key self-reflection modules:
 
 - Planner-Critic (Post-Planning Critique): Self-corrects the initial plans to ensure their accuracy
 
@@ -50,7 +47,7 @@ GUI-Thinker:
 
 <p align="center" style="margin:0"><img src="./assets/agentoverview.jpg" alt="agent" style="width: 80%" /></p>
 
-<p align="center" style="margin-top:-0.5em">Overall framework of GUI-Thinker.</p>
+<p align="center" style="margin-top:-0.5em">Overall framework of WorldGUI-Agent.</p>
 
 <p align="center" style="margin:0"><img src="./assets/plannercritic_flow.png" alt="agent" style="width: 60%" /></p>
 <p align="center" style="margin-top:-0.5em">State-Aware Planner and Planner-Critic modules.</p>
@@ -72,16 +69,16 @@ GUI-Thinker:
 </details>
 
 ## 📢 Update
-* [2025.03.11] ⚡ We are excited to introduce **a fast version of GUI-Thinker** powered by the base models [Claude-3.5-Sonnet](https://www.anthropic.com/news/3-5-models-and-computer-use) and [Claude-3.7-Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet). In this release, the Claude models serve as the Actor without relying on the GUI Parser. This setup delivers impressive speed. Try with [test_guithinker_fast.py](./test_guithinker_fast.py).
-* [2025.03.08] We made a demo for showing the GUI-Thinker.
-* [2025.03.05] ⚡ Our GUI-Thinker now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
-* [2025.03.05] 😊 We release the code of GUI-Thinker. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-gui-thinker). GUI-Thinker now supports various base LMMs through API calling, including GPT-4o, Gemini-2.0, and Claude-3.5-Sonnet. Local model support will be available soon.
+* [2025.03.11] ⚡ We are excited to introduce **a fast version of WorldGUI-Agent** powered by the base models [Claude-3.5-Sonnet](https://www.anthropic.com/news/3-5-models-and-computer-use) and [Claude-3.7-Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet). In this release, the Claude models serve as the Actor without relying on the GUI Parser. This setup delivers impressive speed. Try with [test_guithinker_fast.py](./test_guithinker_fast.py).
+* [2025.03.08] We made a demo for showing the WorldGUI-Agent.
+* [2025.03.05] ⚡ Our WorldGUI-Agent now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
+* [2025.03.05] 😊 We release the code of WorldGUI-Agent. Now, we support running our GUI agent on your Windows computer locally [Getting started](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-getting-started-with-computer-use-agent-WorldGUI-Agent). WorldGUI-Agent now supports various base LMMs through API calling, including GPT-4o, Gemini-2.0, and Claude-3.5-Sonnet. Local model support will be available soon.
 
 * [2025.02.13] We release the WorldGUI in [arxiv](https://arxiv.org/abs/2502.08047).
 
 ## ✨Key Features
 
-- 🏆 **High Performance**: Our GUI-Thinker surpasses Cluade-3.5 Computer Use by 14.9% on our WorldGUI Benchmark.
+- 🏆 **High Performance**: Our WorldGUI-Agent surpasses Cluade-3.5 Computer Use by 14.9% on our WorldGUI Benchmark.
 - 🌐 **Universal LMM Support**: Seamlessly integrates with **A Wide Range** of LMMs (e.g., OpenAI, Anthropic, Gemini)
 - 🔀 **Flexible Interaction**: Supports both **intructional video input** and **non-instructional video input**.
 - 🚀 **Easy Deployment**:  Get started instantly with a simple `.\shells\start_server.bat` command and `python test_guithinker_custom.py` without the need of Docker or Virtual Machine.
@@ -100,11 +97,11 @@ Our codebases includes:
 - [x] **Frontend-backend communication system:** Supports seperate the frontend and backend for flexible deploying the locally running model and user interfaces.
 
 
-See our [paper](https://arxiv.org/abs/2502.08047) for detail. Our GUI-Thinker is along with a newly curted Desktop GUI benchmark WorldGUI.
+See our [paper](https://arxiv.org/abs/2502.08047) for detail. Our WorldGUI-Agent is along with a newly curted Desktop GUI benchmark WorldGUI.
 
-## ✅ Todo List
+<!-- ## ✅ Todo List
 
-GUI-Thinker is continuously evolving! Here's what's coming:
+WorldGUI-Agent is continuously evolving! Here's what's coming:
 
 - [x] ⚡ **Fast Version**: Supporting a fast version specially equipped with anthropic Computer Use without the GUI parser.
 
@@ -115,7 +112,7 @@ GUI-Thinker is continuously evolving! Here's what's coming:
 - [ ] 🎨 **Huggingface Demo**: Developing online demo in Huggingface.
 
 Feel free to open issues or submit pull requests if you have suggestions. Our project is actively maintained, with new features and bug fixes released regularly. 🚀
-
+ -->
 
 ## 🖥️ Demo of Computer Using
 
@@ -162,10 +159,6 @@ If you find WorldGUI useful, please cite using this BibTeX:
       url={https://arxiv.org/abs/2502.08047}, 
 }
 ```
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=showlab/GUI-Thinker&type=Date)](https://star-history.com/#showlab/GUI-Thinker&Date)
 
 
 ## 🔔 Contact
