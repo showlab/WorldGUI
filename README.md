@@ -69,6 +69,7 @@ WorldGUI-Agent:
 </details>
 
 ## 📢 Update
+* [2025.06.10]  We are excited to introduce our improved version of WolrdGUI [arXiv](https://arxiv.org/abs/2502.08047).
 * [2025.03.11] ⚡ We are excited to introduce **a fast version of WorldGUI-Agent** powered by the base models [Claude-3.5-Sonnet](https://www.anthropic.com/news/3-5-models-and-computer-use) and [Claude-3.7-Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet). In this release, the Claude models serve as the Actor without relying on the GUI Parser. This setup delivers impressive speed. Try with [test_guithinker_fast.py](./test_guithinker_fast.py).
 * [2025.03.08] We made a demo for showing the WorldGUI-Agent.
 * [2025.03.05] ⚡ Our WorldGUI-Agent now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
@@ -149,9 +150,9 @@ See [Get Started](./Get%20Started.md) for local computer running.
 If you find WorldGUI useful, please cite using this BibTeX:
 
 ```bibtex
-@misc{zhao2025worldguidynamictestingcomprehensive,
-      title={WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation}, 
-      author={Henry Hengyuan Zhao and Difei Gao and Mike Zheng Shou},
+@misc{zhao2025worldguiinteractivebenchmarkdesktop,
+      title={WorldGUI: An Interactive Benchmark for Desktop GUI Automation from Any Starting Point}, 
+      author={Henry Hengyuan Zhao and Kaiming Yang and Wendi Yu and Difei Gao and Mike Zheng Shou},
       year={2025},
       eprint={2502.08047},
       archivePrefix={arXiv},

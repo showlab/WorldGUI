@@ -137,9 +137,9 @@ https://www.youtube.com/watch?v=RoJ-cbjfZmg
 如果你觉得我们的 WorldGUI 对你的研究或应用有帮助，请使用以下 BibTeX 进行引用：
 
 ```bibtex
-@misc{zhao2025worldguidynamictestingcomprehensive,
-      title={WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation}, 
-      author={Henry Hengyuan Zhao and Difei Gao and Mike Zheng Shou},
+@misc{zhao2025worldguiinteractivebenchmarkdesktop,
+      title={WorldGUI: An Interactive Benchmark for Desktop GUI Automation from Any Starting Point}, 
+      author={Henry Hengyuan Zhao and Kaiming Yang and Wendi Yu and Difei Gao and Mike Zheng Shou},
       year={2025},
       eprint={2502.08047},
       archivePrefix={arXiv},
