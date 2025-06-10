@@ -69,7 +69,8 @@ WorldGUI-Agent:
 </details>
 
 ## 📢 Update
-* [2025.06.10]  We are excited to introduce our improved version of WolrdGUI [arXiv](https://arxiv.org/abs/2502.08047).
+* [2025.06.10]  We are excited to introduce our improved version of [WolrdGUI](https://arxiv.org/abs/2502.08047). We increased the amount of the task from 315 to 611 and revised the technique reports for better understanding.
+
 * [2025.03.11] ⚡ We are excited to introduce **a fast version of WorldGUI-Agent** powered by the base models [Claude-3.5-Sonnet](https://www.anthropic.com/news/3-5-models-and-computer-use) and [Claude-3.7-Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet). In this release, the Claude models serve as the Actor without relying on the GUI Parser. This setup delivers impressive speed. Try with [test_guithinker_fast.py](./test_guithinker_fast.py).
 * [2025.03.08] We made a demo for showing the WorldGUI-Agent.
 * [2025.03.05] ⚡ Our WorldGUI-Agent now supports both [instructional video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-a-prepared-demo-case-under-the-folder-data) and [non-video](https://github.com/showlab/WorldGUI/tree/main?tab=readme-ov-file#-test-with-your-own-user-query) inputs. Enjoy!
