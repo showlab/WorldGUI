@@ -69,7 +69,10 @@ WorldGUI-Agent:
 </details>
 
 ## 📢 Update
-* [2025.06.10]  We are excited to introduce our improved version of [WolrdGUI](https://arxiv.org/abs/2502.08047). We increased the amount of the task from 315 to 611 and revised the technique reports for better understanding.
+
+* [2025.06.29] 😊 We are happy to release our dataset WorldGUI at https://huggingface.co/datasets/hhenryz/WorldGUI-Bench. It contains the user query, the instructional video, the project file, the augmented task, and comprehensive details of our benchmark. Enjoy!
+
+* [2025.06.10] We are excited to introduce our improved version of [WolrdGUI](https://arxiv.org/abs/2502.08047). We increased the amount of the task from 315 to 611 and revised the technique reports for better understanding. We also provided the agent performance on WindowsAgentArena Benchmark, check it.
 
 * [2025.03.11] ⚡ We are excited to introduce **a fast version of WorldGUI-Agent** powered by the base models [Claude-3.5-Sonnet](https://www.anthropic.com/news/3-5-models-and-computer-use) and [Claude-3.7-Sonnet](https://www.anthropic.com/news/claude-3-7-sonnet). In this release, the Claude models serve as the Actor without relying on the GUI Parser. This setup delivers impressive speed. Try with [test_guithinker_fast.py](./test_guithinker_fast.py).
 * [2025.03.08] We made a demo for showing the WorldGUI-Agent.
