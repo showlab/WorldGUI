@@ -17,7 +17,7 @@ def run_gpt4o_interleaved(prompt, llm, max_tokens=1000, temperature=0, stop=None
     
     messages = []
     content = []
-    messages.append({"role": "system", "content": "You are a helpful assistant that responds in Markdown. Help me with my math homework!"})
+    messages.append({"role": "system", "content": "You are an assistant who helps understand images and answer questions."})
     if isinstance(prompt, list):
         for item in prompt:
             if is_image_path(item):  # Ensure you define this function
