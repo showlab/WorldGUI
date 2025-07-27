@@ -6,7 +6,7 @@ git clone https://github.com/showlab/GUI-Thinker.git
 cd GUI-Thinker
 ```
 
-## 2. Env setup 🔨
+## 2. Env setup 🔨 (For Windows Platform)
 
 To create a Conda virtual environment and activate it, follow these steps:
 
